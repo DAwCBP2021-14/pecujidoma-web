@@ -50,8 +50,8 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               <Image
                 src={`/img/obrazky/listOfServices1.jpg`}
                 alt={`terenni_odlehcovaci_sluzby`}
-                width={400}
-                height={400}
+                width={350}
+                height={350}
                 objectFit="contain"
                 className="listOfServices_img"
               />
@@ -101,8 +101,8 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
           <Image
             src={`/img/obrazky/listOfServices2.jpg`}
             alt={`paliativní péče`}
-            width={400}
-            height={400}
+            width={350}
+            height={350}
             objectFit="contain"
             className="listOfServices_img"
           />
@@ -149,8 +149,8 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
           <Image
             src={`/img/obrazky/listOfServices3.jpg`}
             alt={`osobní asistence`}
-            width={400}
-            height={400}
+            width={350}
+            height={350}
             objectFit="contain"
             className="listOfServices_img"
           />
@@ -197,8 +197,8 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
           <Image
             src={`/img/obrazky/listOfServices4.jpg`}
             alt={`psychologická péče`}
-            width={400}
-            height={400}
+            width={350}
+            height={350}
             objectFit="contain"
             className="listOfServices_img"
           />
@@ -245,8 +245,8 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
           <Image
             src={`/img/obrazky/listOfServices5.jpg`}
             alt={`půjčovna kompenzačních pomůcek`}
-            width={400}
-            height={400}
+            width={350}
+            height={350}
             objectFit="contain"
             className="listOfServices_img"
           />

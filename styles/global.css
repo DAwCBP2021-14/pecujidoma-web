@@ -276,7 +276,6 @@ sub {
 
 .accordion-body {
   text-align: justify;
-  position: relative;
 }
 
 .listOfServices_img {
@@ -301,9 +300,6 @@ sub {
 
 .btn-list_of_services {
   margin: 25px;
-  position: absolute;
-  right: 0%;
-  bottom: 0%;
 }
 .btn-list_of_services:hover {
   background-color: rgb(218, 146, 40);
@@ -512,7 +508,6 @@ sub {
 }
 
 .accordion-button:not(.collapsed) {
-  color: white;
   background-color: #eda438;
   /*color: #eda438; 
   background-color: rgba(237, 165, 56, 0.48);*/
