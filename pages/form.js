@@ -7,15 +7,15 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
       <Head>
         <title>Jakou službu potřebuji?</title>
       </Head>
-      <h3 class="headings">Jakou službu potřebuji?</h3>
-      <p class="intro__text text-margin">
+      <h3 className="headings">Jakou službu potřebuji?</h3>
+      <p className="intro__text text-margin">
         Stačí zodpovědět pár otázek a hned budete vědět, kterou službu Vy či Váš
         blízký potřebuje.
       </p>
 
-      <div class="form-container">
+      <div className="form-container">
         <form action="">
-          <div class="question">
+          <div className="question">
             <p>
               1) Potřebujete doma pomoci se zdravotnickými úkony, jako jsou
               aplikace injekcí, pooperační péče, převazy ran, podání infuzí
@@ -29,7 +29,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <label for="no1">NE</label>
           </div>
 
-          <div class="question">
+          <div className="question">
             <p>
               2) Potřebujete výpomoc pro seniora nebo osobu se sníženou
               soběstačností při péči o sebe nebo o domácnost?
@@ -40,7 +40,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <label for="no2">NE</label>
           </div>
 
-          <div class="question">
+          <div className="question">
             <p>
               3) Potřebujete doma pomoci s péčí nebo zastoupit po určitou dobu
               (např. 4 hodiny denně)?
@@ -51,7 +51,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <label for="no3">NE</label>
           </div>
 
-          <div class="question">
+          <div className="question">
             <p>
               4) Ukončili lékaři u vašeho nevyléčitelně nemocného blízkého
               aktivní léčbu?
@@ -62,7 +62,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <label for="no4">NE</label>
           </div>
 
-          <div class="question">
+          <div className="question">
             <p>
               5) Máte nevyléčitelně nemocného blízkého v nemocnici a chtěli
               byste si ho vzít domů?
@@ -73,7 +73,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <label for="no5">NE</label>
           </div>
 
-          <div class="question">
+          <div className="question">
             <p>
               6) Pečujete o zdravotně postižené děti a potřebujete jim pomoci
               žít běžným způsobem jejich vrstevníků? Nebo potřebujete pomoci
@@ -87,7 +87,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <label for="no6">NE</label>
           </div>
 
-          <div class="question">
+          <div className="question">
             <p>
               7) Potřebujete pomoc psychologa pro sebe nebo pro osobu, o kterou
               pečujete?
@@ -98,7 +98,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <label for="no7">NE</label>
           </div>
 
-          <div class="question">
+          <div className="question">
             <p>
               8) Potřebujete pro nemocného kompenzační pomůcky, jako je
               invalidní vozík, oxygenátor nebo toaletní křeslo?
@@ -110,7 +110,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
           </div>
 
           <input
-            class="btn btn-aboutUs btn-form"
+            className="btn btn-aboutUs btn-form"
             type="submit"
             value="ZJISTIT"
           />

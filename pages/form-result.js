@@ -9,18 +9,18 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
       <Head>
         <title>Jakou službu potřebuji?</title>
       </Head>
-      <h3 class="headings">Jakou službu potřebuji?</h3>
-      <p class="intro__text text-margin">
+      <h3 className="headings">Jakou službu potřebuji?</h3>
+      <p className="intro__text text-margin">
         Stačí zodpovědět pár otázek a hned budete vědět, kterou službu Vy či Váš
         blízký potřebuje.
       </p>
 
-      <div class="form-container">
-        <div class="result"></div>
-        <div class="result__answer">
+      <div className="form-container">
+        <div className="result"></div>
+        <div className="result__answer">
           <h4>Služba, kterou hledáte, je:</h4>
-          <ul class="detail__description-services">
-            <li class="true">
+          <ul className="detail__description-services">
+            <li className="true">
               <Image
                 src={`/img/ikony/ikona_pece.png`}
                 alt="Ikona Terenní odlehčovací služba"
@@ -31,7 +31,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               />
               Terénní odlehčovací služba
             </li>
-            <li class="true">
+            <li className="true">
               <Image
                 src={`/img/ikony/ikona_hospic.png`}
                 alt="Ikona hospic"
@@ -42,7 +42,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               />
               Palliativní péče
             </li>
-            <li class="false">
+            <li className="false">
               <Image
                 src={`/img/ikony/ikona_osobni_asistence.png`}
                 alt="Ikona osobní asistence"
@@ -53,7 +53,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               />{' '}
               Osobní asistence
             </li>
-            <li class="false">
+            <li className="false">
               <Image
                 src={`/img/ikony/ikona_psycholog.png`}
                 alt="Ikona psychologiská péče"
@@ -64,7 +64,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               />
               Psychologická péče
             </li>
-            <li class="true">
+            <li className="true">
               <Image
                 src={`/img/ikony/ikona_pujcovna.png`}
                 alt="Ikona půjčovna"
@@ -76,18 +76,18 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               Půjčovna kompenzačních pomůcek
             </li>
           </ul>
-          <div class="result-btn">
+          <div className="result-btn">
             <Link href={`/services/`}>
-              <a class="btn bold btn-form">Zjistit víc o službách</a>
+              <a className="btn bold btn-form">Zjistit víc o službách</a>
             </Link>
 
             <Link href={`/`}>
-              <a class="btn btn-form">Zpět na hlavní stránku</a>
+              <a className="btn btn-form">Zpět na hlavní stránku</a>
             </Link>
           </div>
         </div>
         <form action="">
-          <div class="question">
+          <div className="question">
             <p>
               1) Potřebujete doma pomoci se zdravotnickými úkony, jako jsou
               aplikace injekcí, pooperační péče, převazy ran, podání infuzí
@@ -101,7 +101,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <label for="no1">NE</label>
           </div>
 
-          <div class="question">
+          <div className="question">
             <p>
               2) Potřebujete výpomoc pro seniora nebo osobu se sníženou
               soběstačností při péči o sebe nebo o domácnost?
@@ -112,7 +112,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <label for="no2">NE</label>
           </div>
 
-          <div class="question">
+          <div className="question">
             <p>
               3) Potřebujete doma pomoci s péčí nebo zastoupit po určitou dobu
               (např. 4 hodiny denně)?
@@ -123,7 +123,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <label for="no3">NE</label>
           </div>
 
-          <div class="question">
+          <div className="question">
             <p>
               4) Ukončili lékaři u vašeho nevyléčitelně nemocného blízkého
               aktivní léčbu?
@@ -134,7 +134,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <label for="no4">NE</label>
           </div>
 
-          <div class="question">
+          <div className="question">
             <p>
               5) Máte nevyléčitelně nemocného blízkého v nemocnici a chtěli
               byste si ho vzít domů?
@@ -145,7 +145,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <label for="no5">NE</label>
           </div>
 
-          <div class="question">
+          <div className="question">
             <p>
               6) Pečujete o zdravotně postižené děti a potřebujete jim pomoci
               žít běžným způsobem jejich vrstevníků? Nebo potřebujete pomoci
@@ -159,7 +159,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <label for="no6">NE</label>
           </div>
 
-          <div class="question">
+          <div className="question">
             <p>
               7) Potřebujete pomoc psychologa pro sebe nebo pro osobu, o kterou
               pečujete?
@@ -170,7 +170,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <label for="no7">NE</label>
           </div>
 
-          <div class="question">
+          <div className="question">
             <p>
               8) Potřebujete pro nemocného kompenzační pomůcky, jako je
               invalidní vozík, oxygenátor nebo toaletní křeslo?
@@ -182,7 +182,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
           </div>
 
           <input
-            class="btn btn-aboutUs btn-form"
+            className="btn btn-aboutUs btn-form"
             type="submit"
             value="ZJISTIT"
           />
