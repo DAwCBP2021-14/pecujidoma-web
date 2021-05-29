@@ -282,14 +282,16 @@ sub {
   margin: 15px;
 }
 
-.listOfServices__intro--background {
-  background-color: rgba(255, 255, 255, 0.664);
-}
 .listOfServices__background--img {
-  background-image: url(../public/img/obrazky/f10.png);
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.664),
+      rgba(129, 98, 67, 0.486)
+    ),
+    url(../public/img/obrazky/f10.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  font-weight: 700;
 }
 
 .text_flex {
