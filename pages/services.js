@@ -8,23 +8,23 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
       <Head>
         <title>Přehled služeb</title>
       </Head>
-      <div class="index-container listOfServices__background--img">
-        <div class="index-intro">
-          <h2 class="headings index-heading">Přehled služeb</h2>
-          <p class="intro__text listOfServices__intro--background">
+      <div className="index-container listOfServices__background--img">
+        <div className="index-intro">
+          <h2 className="headings index-heading">Přehled služeb</h2>
+          <p className="intro__text listOfServices__intro--background">
             Veškeré služby, které vám mohou pomoci v péči o vaše blízké, najdete
             přehledně na této stránce. Popisy jednotlivých služeb vám pomohou s
             výběrem té správné pomocné ruky právě pro vás a vaše blízké.
           </p>
         </div>
         <div
-          class="accordion accordion-flush container-fluid"
+          className="accordion accordion-flush container-fluid"
           id="accordionFlushExample"
         >
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="flush-headingOne">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseOne"
@@ -32,7 +32,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 aria-controls="flush-collapseOne"
               >
                 Terénní odlehčovací služby
-                <span class="pruhledne">1111111</span>
+                <span className="pruhledne">1111111</span>
                 <sub>
                   Pomocná ruka pro všechny pečující, kteří si potřebují vyřídit
                   nejnutnější záležitosti, odpočinout si od každodenní péče nebo
@@ -42,16 +42,16 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </h2>
             <div
               id="flush-collapseOne"
-              class="accordion-collapse collapse text_flex"
+              className="accordion-collapse collapse text_flex"
               aria-labelledby="flush-headingOne"
               data-bs-parent="#accordionFlushExample"
             >
               <img
                 src="img/obrazky/listOfServices1.jpg"
                 alt="terenni_odlehcovaci_sluzby"
-                class="listOfServices_img"
+                className="listOfServices_img"
               />
-              <div class="accordion-body">
+              <div className="accordion-body">
                 Pomocná ruka pro všechny pečující, kteří si potřebují vyřídit
                 nejnutnější záležitosti, odpočinout si od každodenní péče nebo
                 se věnovat svým koníčkům. Domů přijede pečovatelka, případně
@@ -59,8 +59,8 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 poskytnuta profesionální péče a vy získáte trochu volného času.
               </div>
               <Link href={`/organizations`}>
-                <a class="btn btn-list_of_services">
-                  <span class="bold">
+                <a className="btn btn-list_of_services">
+                  <span className="bold">
                     Organizace poskytující terénní odlehčovací služby
                   </span>
                 </a>
@@ -70,10 +70,10 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
         </div>
       </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingTwo">
+      <div className="accordion-item">
+        <h2 className="accordion-header" id="flush-headingTwo">
           <button
-            class="accordion-button collapsed"
+            className="accordion-button collapsed"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#flush-collapseTwo"
@@ -81,7 +81,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             aria-controls="flush-collapseTwo"
           >
             Paliativní péče
-            <span class="pruhledne">11111111111111111</span>
+            <span className="pruhledne">11111111111111111</span>
             <sub>
               Péče o nevyléčitelně nemocné pacienty v domácích podmínkách.
               Domácí hospicová péče nabízí pomoc 24 hodin denně 7 dní v týdnu.
@@ -90,16 +90,16 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
         </h2>
         <div
           id="flush-collapseTwo"
-          class="accordion-collapse collapse text_flex"
+          className="accordion-collapse collapse text_flex"
           aria-labelledby="flush-headingTwo"
           data-bs-parent="#flush-headingTwo"
         >
           <img
             src="img/obrazky/listOfServices2.jpg"
             alt="paliativní péče"
-            class="listOfServices_img"
+            className="listOfServices_img"
           />
-          <div class="accordion-body">
+          <div className="accordion-body">
             Péče o nevyléčitelně nemocné pacienty v domácích podmínkách. Domácí
             hospicová péče nabízí pomoc zdravotních sester i pečovatelek 24
             hodin denně 7 dní v týdnu. Pečující mohou využít pomoc při dávkování
@@ -107,24 +107,26 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             sociální podporu.
           </div>
           <Link href={`/organizations`}>
-            <a class="btn btn-list_of_services">
-              <span class="bold">Organizace poskytující paliativní péči</span>
+            <a className="btn btn-list_of_services">
+              <span className="bold">
+                Organizace poskytující paliativní péči
+              </span>
             </a>
           </Link>
         </div>
       </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
+      <div className="accordion-item">
+        <h2 className="accordion-header" id="flush-headingThree">
           <button
-            class="accordion-button collapsed"
+            className="accordion-button collapsed"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#flush-collapseThree"
             aria-expanded="false"
             aria-controls="flush-collapseThree"
           >
-            Osobní asistence<span class="pruhledne">111111111111111</span>
+            Osobní asistence<span className="pruhledne">111111111111111</span>
             <sub>
               Pomoc a podpora pro pacienty při chodu domácnosti, hygieně, se
               sociálními kontakty a dalšími potřebami.
@@ -133,16 +135,16 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
         </h2>
         <div
           id="flush-collapseThree"
-          class="accordion-collapse collapse text_flex"
+          className="accordion-collapse collapse text_flex"
           aria-labelledby="flush-headingThree"
           data-bs-parent="#flush-headingThree"
         >
           <img
             src="img/obrazky/listOfServices3.jpg"
             alt="osobní asistence"
-            class="listOfServices_img"
+            className="listOfServices_img"
           />
-          <div class="accordion-body">
+          <div className="accordion-body">
             Pomoc a podpora pro pacienty při chodu domácnosti, hygieně, se
             sociálními kontakty a dalšími potřebami. Osobní asistence je placená
             sociální služba pomáhající osobám, které z důvodu zdravotního
@@ -150,24 +152,26 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             života.
           </div>
           <Link href={`/organizations`}>
-            <a class="btn btn-list_of_services">
-              <span class="bold">Organizace poskytující osobní asistenci</span>
+            <a className="btn btn-list_of_services">
+              <span className="bold">
+                Organizace poskytující osobní asistenci
+              </span>
             </a>
           </Link>
         </div>
       </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-heading3">
+      <div className="accordion-item">
+        <h2 className="accordion-header" id="flush-heading3">
           <button
-            class="accordion-button collapsed"
+            className="accordion-button collapsed"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#flush-collapse3"
             aria-expanded="false"
             aria-controls="flush-collapse3"
           >
-            Psychologická péče<span class="pruhledne">1111111111111</span>
+            Psychologická péče<span className="pruhledne">1111111111111</span>
             <sub>
               Psychologická pomoc pro pacienty i jejich rodiny, zejména o
               pečující členy domácnosti je velmi potřebná.
@@ -176,24 +180,24 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
         </h2>
         <div
           id="flush-collapse3"
-          class="accordion-collapse collapse text_flex"
+          className="accordion-collapse collapse text_flex"
           aria-labelledby="flush-heading3"
           data-bs-parent="#accordionFlushExample"
         >
           <img
             src="img/obrazky/listOfServices4.jpg"
             alt="psychologická péče"
-            class="listOfServices_img"
+            className="listOfServices_img"
           />
-          <div class="accordion-body">
+          <div className="accordion-body">
             Psychologická pomoc pro pacienty i jejich rodiny, zejména o pečující
             členy domácnosti, je velmi potřebná. Psycholog vyslechne, poradí a
             pomůže v těžké situaci. Nebojte se obrátit na odborníky, kteří vám
             mohou v náročném životním období ulehčit.
           </div>
           <Link href={`/organizations`}>
-            <a class="btn btn-list_of_services">
-              <span class="bold">
+            <a className="btn btn-list_of_services">
+              <span className="bold">
                 Organizace poskytující psychologickou péči
               </span>
             </a>
@@ -201,10 +205,10 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
         </div>
       </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-heading4">
+      <div className="accordion-item">
+        <h2 className="accordion-header" id="flush-heading4">
           <button
-            class="accordion-button collapsed"
+            className="accordion-button collapsed"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#flush-collapse4"
@@ -221,16 +225,16 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
         </h2>
         <div
           id="flush-collapse4"
-          class="accordion-collapse collapse text_flex"
+          className="accordion-collapse collapse text_flex"
           aria-labelledby="flush-heading4"
           data-bs-parent="#flush-heading4"
         >
           <img
             src="img/obrazky/listOfServices5.jpg"
             alt="půjčovna kompenzačních pomůcek"
-            class="listOfServices_img"
+            className="listOfServices_img"
           />
-          <div class="accordion-body">
+          <div className="accordion-body">
             Velká pomoc pro pečující rodiny i jejich pacienty jsou různé
             kompenzační pomůcky, které pomohou ulehčit péči i každodenní běžné
             fungování rodiny. Půjčovny kompenzačních pomůcek nabízejí mnoho
@@ -238,8 +242,8 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             oxygenátory či lienární dávkovače léků.
           </div>
           <Link href={`/organizations`}>
-            <a class="btn btn-list_of_services">
-              <span class="bold">Půjčovny kompenzačních pomůcek</span>
+            <a className="btn btn-list_of_services">
+              <span className="bold">Půjčovny kompenzačních pomůcek</span>
             </a>
           </Link>
         </div>
