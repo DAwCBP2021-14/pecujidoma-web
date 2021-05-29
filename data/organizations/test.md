@@ -1,6 +1,6 @@
 ---
 name: 'Testovací organizace'
-logo: 'ledax.jpg'
+logo: 'Ledax.jpg'
 town: 'Testov'
 url: 'http://test.test'
 email: 'test@test.test'
