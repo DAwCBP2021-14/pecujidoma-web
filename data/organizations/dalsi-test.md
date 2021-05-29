@@ -1,7 +1,7 @@
 ---
-name: 'Testovací organizace'
-logo: 'Ledax.jpg'
-town: 'Písek
+name: 'Druhá estovací organizace'
+logo: 'Athelas.jpg'
+town: 'Jindřichův Hradec'
 url: 'http://test.test'
 email: 'test@test.test'
 phone: '123456789'
