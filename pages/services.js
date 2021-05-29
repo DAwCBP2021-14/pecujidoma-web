@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Page({ allOrganizationsData: allOrganizationsData }) {
   return (
@@ -11,7 +12,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
       <div className="index-container listOfServices__background--img">
         <div className="index-intro">
           <h2 className="headings index-heading">Přehled služeb</h2>
-          <p className="intro__text listOfServices__intro--background">
+          <p className="intro__text bold">
             Veškeré služby, které vám mohou pomoci v péči o vaše blízké, najdete
             přehledně na této stránce. Popisy jednotlivých služeb vám pomohou s
             výběrem té správné pomocné ruky právě pro vás a vaše blízké.
@@ -46,9 +47,12 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               aria-labelledby="flush-headingOne"
               data-bs-parent="#accordionFlushExample"
             >
-              <img
-                src="img/obrazky/listOfServices1.jpg"
-                alt="terenni_odlehcovaci_sluzby"
+              <Image
+                src={`/img/obrazky/listOfServices1.jpg`}
+                alt={`terenni_odlehcovaci_sluzby`}
+                width={400}
+                height={300}
+                objectFit="contain"
                 className="listOfServices_img"
               />
               <div className="accordion-body">
