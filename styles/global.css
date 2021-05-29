@@ -366,6 +366,7 @@ sub {
 
 .card-org__logo img {
   width: 100%;
+  position: relative;
 }
 
 .card-org__name {
@@ -444,7 +445,7 @@ sub {
 }
 
 .detail__description h3::after {
-  content: " ";
+  content: ' ';
   display: block;
   height: 2px;
   width: 250px;
@@ -532,7 +533,7 @@ sub {
   margin-bottom: 70px;
 }
 .aboutUs-container h4::after {
-  content: " ";
+  content: ' ';
   display: block;
   height: 2px;
   width: 350px;
