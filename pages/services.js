@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
+import Link from 'next/link';
 
 export default function Page({ allOrganizationsData: allOrganizationsData }) {
   return (
@@ -57,11 +58,13 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 zdravotní sestra a postará se o vše potřebné. Vašim blízkým bude
                 poskytnuta profesionální péče a vy získáte trochu volného času.
               </div>
-              <a href="listOfOrg.html" class="btn btn-list_of_services">
-                <span class="bold">
-                  Organizace poskytující terénní odlehčovací služby
-                </span>
-              </a>
+              <Link href={`/organizations`}>
+                <a class="btn btn-list_of_services">
+                  <span class="bold">
+                    Organizace poskytující terénní odlehčovací služby
+                  </span>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -103,9 +106,11 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             léků, zdravotní péči, s hygienou nemocného nebo psychologickou a
             sociální podporu.
           </div>
-          <a href="listOfOrg.html" class="btn btn-list_of_services">
-            <span class="bold">Organizace poskytující paliativní péči</span>
-          </a>
+          <Link href={`/organizations`}>
+            <a class="btn btn-list_of_services">
+              <span class="bold">Organizace poskytující paliativní péči</span>
+            </a>
+          </Link>
         </div>
       </div>
 
@@ -144,9 +149,11 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             postižení, věku nebo nemoci potřebují pomoc v běžných činnostech
             života.
           </div>
-          <a href="listOfOrg.html" class="btn btn-list_of_services">
-            <span class="bold">Organizace poskytující osobní asistenci</span>
-          </a>
+          <Link href={`/organizations`}>
+            <a class="btn btn-list_of_services">
+              <span class="bold">Organizace poskytující osobní asistenci</span>
+            </a>
+          </Link>
         </div>
       </div>
 
@@ -184,9 +191,13 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             pomůže v těžké situaci. Nebojte se obrátit na odborníky, kteří vám
             mohou v náročném životním období ulehčit.
           </div>
-          <a href="listOfOrg.html" class="btn btn-list_of_services">
-            <span class="bold">Organizace poskytující psychologickou péči</span>
-          </a>
+          <Link href={`/organizations`}>
+            <a class="btn btn-list_of_services">
+              <span class="bold">
+                Organizace poskytující psychologickou péči
+              </span>
+            </a>
+          </Link>
         </div>
       </div>
 
@@ -226,9 +237,11 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             možností od polohovacích postelí, vozíků, chodítek, až po
             oxygenátory či lienární dávkovače léků.
           </div>
-          <a href="listOfOrg.html" class="btn btn-list_of_services">
-            <span class="bold">Půjčovny kompenzačních pomůcek</span>
-          </a>
+          <Link href={`/organizations`}>
+            <a class="btn btn-list_of_services">
+              <span class="bold">Půjčovny kompenzačních pomůcek</span>
+            </a>
+          </Link>
         </div>
       </div>
     </Layout>
