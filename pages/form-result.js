@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Page({ allOrganizationsData: allOrganizationsData }) {
   return (
@@ -14,6 +16,76 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
       </p>
 
       <div class="form-container">
+        <div class="result"></div>
+        <div class="result__answer">
+          <h4>Služba, kterou hledáte, je:</h4>
+          <ul class="detail__description-services">
+            <li class="true">
+              <Image
+                src={`/img/ikony/ikona_pece.png`}
+                alt="Ikona Terenní odlehčovací služba"
+                width={60}
+                height={40}
+                objectFit="contain"
+                className="orgDetails__icons"
+              />
+              Terénní odlehčovací služba
+            </li>
+            <li class="true">
+              <Image
+                src={`/img/ikony/ikona_hospic.png`}
+                alt="Ikona hospic"
+                width={60}
+                height={40}
+                objectFit="contain"
+                className="orgDetails__icons"
+              />
+              Palliativní péče
+            </li>
+            <li class="false">
+              <Image
+                src={`/img/ikony/ikona_osobni_asistence.png`}
+                alt="Ikona osobní asistence"
+                width={60}
+                height={40}
+                objectFit="contain"
+                className="orgDetails__icons"
+              />{' '}
+              Osobní asistence
+            </li>
+            <li class="false">
+              <Image
+                src={`/img/ikony/ikona_psycholog.png`}
+                alt="Ikona psychologiská péče"
+                width={60}
+                height={40}
+                objectFit="contain"
+                className="orgDetails__icons"
+              />
+              Psychologická péče
+            </li>
+            <li class="true">
+              <Image
+                src={`/img/ikony/ikona_pujcovna.png`}
+                alt="Ikona půjčovna"
+                width={60}
+                height={40}
+                objectFit="contain"
+                className="orgDetails__icons"
+              />
+              Půjčovna kompenzačních pomůcek
+            </li>
+          </ul>
+          <div class="result-btn">
+            <Link href={`/services/`}>
+              <a class="btn bold btn-form">Zjistit víc o službách</a>
+            </Link>
+
+            <Link href={`/`}>
+              <a class="btn btn-form">Zpět na hlavní stránku</a>
+            </Link>
+          </div>
+        </div>
         <form action="">
           <div class="question">
             <p>
