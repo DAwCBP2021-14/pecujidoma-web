@@ -14,9 +14,9 @@ export default function Organization({ organizationData: organizationData }) {
         <title>{organizationData.name}</title>
       </Head>
 
-      <div class="detail">
-        <div class="detail-flex">
-          <div class="detail__logo">
+      <div className="detail">
+        <div className="detail-flex">
+          <div className="detail__logo">
             <Image
               src={`/img/loga/${organizationData.logo}`}
               alt={organizationData.name}
@@ -25,33 +25,34 @@ export default function Organization({ organizationData: organizationData }) {
               objectFit="contain"
             />
           </div>
-          <div class="detail__info">
-            <h2 class="detail__info--name">{organizationData.name}</h2>
+          <div className="detail__info">
+            <h2 className="detail__info--name">{organizationData.name}</h2>
 
-            <ul class="detail__info-contacts">
-              <li class="detail-town">{organizationData.town}</li>
-              <li class="detail-www">
-                <a href={organizationData.url} target="_blank" class="bold">
+            <ul className="detail__info-contacts">
+              <li className="detail-town">{organizationData.town}</li>
+              <li className="detail-www">
+                <a href={organizationData.url} target="_blank" className="bold">
                   {organizationData.url}
                 </a>
               </li>
               <li
-                class="detail-email"
+                className="detail-email"
                 href={`mailto:${organizationData.email}`}
               >
-                e-mail: <span class="e-mail">{organizationData.email}</span>
+                e-mail: <span className="e-mail">{organizationData.email}</span>
               </li>
 
-              <li class="detail-phone">
-                tel.: <span class="phone-number">{organizationData.phone}</span>
+              <li className="detail-phone">
+                tel.:{' '}
+                <span className="phone-number">{organizationData.phone}</span>
               </li>
             </ul>
           </div>
         </div>
-        <div class="detail__description">
+        <div className="detail__description">
           <h3>Popis služeb</h3>
-          <ul class="detail__description-services">
-            <li class="true">
+          <ul className="detail__description-services">
+            <li className="true">
               <Image
                 src={`/img/ikony/ikona_pece.png`}
                 alt="Ikona Terenní odlehčovací služba"
@@ -63,7 +64,7 @@ export default function Organization({ organizationData: organizationData }) {
               Terénní odlehčovací služba (pečovatelská služba + domácí zdravotní
               péče)
             </li>
-            <li class="true">
+            <li className="true">
               <Image
                 src={`/img/ikony/ikona_hospic.png`}
                 alt="Ikona hospic"
@@ -74,7 +75,7 @@ export default function Organization({ organizationData: organizationData }) {
               />
               Paliativní péče (domácí hospic + paliativní lůžka)
             </li>
-            <li class="false">
+            <li className="false">
               <Image
                 src={`/img/ikony/ikona_osobni_asistence.png`}
                 alt="Ikona osobní asistence"
@@ -85,7 +86,7 @@ export default function Organization({ organizationData: organizationData }) {
               />
               Osobní asistence
             </li>
-            <li class="false">
+            <li className="false">
               <Image
                 src={`/img/ikony/ikona_psycholog.png`}
                 alt="Ikona psychologiská péče"
@@ -96,7 +97,7 @@ export default function Organization({ organizationData: organizationData }) {
               />
               Psychologická péče
             </li>
-            <li class="true">
+            <li className="true">
               <Image
                 src={`/img/ikony/ikona_pujcovna.png`}
                 alt="Ikona půjčovna"
@@ -109,8 +110,8 @@ export default function Organization({ organizationData: organizationData }) {
             </li>
           </ul>
           <Link href={`/organizations/`}>
-            <a class="btn btn-details">
-              <span class="bold"> Zpět na výpis organizací</span>
+            <a className="btn btn-details">
+              <span className="bold"> Zpět na výpis organizací</span>
             </a>
           </Link>
         </div>
