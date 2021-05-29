@@ -37,7 +37,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 <div class="card-org__item card-org__item--logo">
                   <div class="card-org__logo">
                     <Image
-                      src={`/logo/${logo}`}
+                      src={`/img/loga/${logo}`}
                       alt={name}
                       width={400}
                       height={300}
@@ -55,7 +55,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                   </p>
                 </div>
               </div>
-              <Link href={`/organization/${id}`}>
+              <Link href={`/organizations/${id}`}>
                 <a class="btn card-org__town">
                   <span class="bold">Detail</span>
                 </a>
