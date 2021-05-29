@@ -14,10 +14,10 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
       </p>
 
       <div className="form-container">
-        <form action="">
+        <form method="GET" action="/form-result">
           <div className="question">
             <p>
-              1) Potřebujete doma pomoci se zdravotnickými úkony, jako jsou
+              1. Potřebujete doma pomoci se zdravotnickými úkony, jako jsou
               aplikace injekcí, pooperační péče, převazy ran, podání infuzí
               atd.?
             </p>
@@ -31,7 +31,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
 
           <div className="question">
             <p>
-              2) Potřebujete výpomoc pro seniora nebo osobu se sníženou
+              2. Potřebujete výpomoc pro seniora nebo osobu se sníženou
               soběstačností při péči o sebe nebo o domácnost?
             </p>
             <input type="radio" id="yes2" name="pecovatelska" value="true" />
@@ -42,7 +42,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
 
           <div className="question">
             <p>
-              3) Potřebujete doma pomoci s péčí nebo zastoupit po určitou dobu
+              3. Potřebujete doma pomoci s péčí nebo zastoupit po určitou dobu
               (např. 4 hodiny denně)?
             </p>
             <input type="radio" id="yes3" name="terenni" value="true" />
@@ -53,7 +53,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
 
           <div className="question">
             <p>
-              4) Ukončili lékaři u vašeho nevyléčitelně nemocného blízkého
+              4. Ukončili lékaři u vašeho nevyléčitelně nemocného blízkého
               aktivní léčbu?
             </p>
             <input type="radio" id="yes4" name="palliativni" value="true" />
@@ -64,7 +64,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
 
           <div className="question">
             <p>
-              5) Máte nevyléčitelně nemocného blízkého v nemocnici a chtěli
+              5. Máte nevyléčitelně nemocného blízkého v nemocnici a chtěli
               byste si ho vzít domů?
             </p>
             <input type="radio" id="yes5" name="hospic" value="true" />
@@ -75,7 +75,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
 
           <div className="question">
             <p>
-              6) Pečujete o zdravotně postižené děti a potřebujete jim pomoci
+              6. Pečujete o zdravotně postižené děti a potřebujete jim pomoci
               žít běžným způsobem jejich vrstevníků? Nebo potřebujete pomoci
               dospělým osobám se zdravotním postižením a seniorům zvládnout s
               pomocí osobního asistenta činnosti, které nemohou vykonávat
@@ -89,7 +89,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
 
           <div className="question">
             <p>
-              7) Potřebujete pomoc psychologa pro sebe nebo pro osobu, o kterou
+              7. Potřebujete pomoc psychologa pro sebe nebo pro osobu, o kterou
               pečujete?
             </p>
             <input type="radio" id="yes7" name="psycho" value="true" />
@@ -100,7 +100,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
 
           <div className="question">
             <p>
-              8) Potřebujete pro nemocného kompenzační pomůcky, jako je
+              8. Potřebujete pro nemocného kompenzační pomůcky, jako je
               invalidní vozík, oxygenátor nebo toaletní křeslo?
             </p>
             <input type="radio" id="yes8" name="pomucky" value="true" />
