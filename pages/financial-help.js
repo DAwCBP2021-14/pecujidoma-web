@@ -10,7 +10,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
       <div className="index-container  listOfServices__background--img">
         <div className="index-intro">
           <h2 className="headings index-heading">Finanční pomoc</h2>
-          <p className="intro__text">
+          <p className="intro__text bold">
             Když se rozhodnete pečovat doma, je nezbytné zajistit finanční
             prostředky na pečovatelské služby nebo nahradit výpadek Vašich
             příjmů, když musíte dočasně opustit své zaměstnání. Zde najdete
@@ -74,7 +74,9 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 target="_blank"
                 className="btn btn-list_of_services"
               >
-                <span className="bold">Bližší informace o příspěvku na péči</span>
+                <span className="bold">
+                  Bližší informace o příspěvku na péči
+                </span>
               </a>
             </div>
           </div>
@@ -267,7 +269,9 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 target="_blank"
                 className="btn btn-list_of_services"
               >
-                <span className="bold">Bližší informace o invalidním důchodu</span>
+                <span className="bold">
+                  Bližší informace o invalidním důchodu
+                </span>
               </a>
             </div>
           </div>
@@ -386,7 +390,9 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 target="_blank"
                 className="btn btn-list_of_services"
               >
-                <span className="bold">Bližší informace o dalších podporách</span>
+                <span className="bold">
+                  Bližší informace o dalších podporách
+                </span>
               </a>
             </div>
           </div>
