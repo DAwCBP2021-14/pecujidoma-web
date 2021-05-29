@@ -7,10 +7,10 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
       <Head>
         <title>Finanční pomoc</title>
       </Head>
-      <div class="index-container  listOfServices__background--img">
-        <div class="index-intro">
-          <h2 class="headings index-heading">Finanční pomoc</h2>
-          <p class="intro__text">
+      <div className="index-container  listOfServices__background--img">
+        <div className="index-intro">
+          <h2 className="headings index-heading">Finanční pomoc</h2>
+          <p className="intro__text">
             Když se rozhodnete pečovat doma, je nezbytné zajistit finanční
             prostředky na pečovatelské služby nebo nahradit výpadek Vašich
             příjmů, když musíte dočasně opustit své zaměstnání. Zde najdete
@@ -18,13 +18,13 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
           </p>
         </div>
         <div
-          class="accordion accordion-flush container-fluid"
+          className="accordion accordion-flush container-fluid"
           id="accordionFlushExample"
         >
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="flush-headingOne">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseOne"
@@ -32,7 +32,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 aria-controls="flush-collapseOne"
               >
                 Příspěvek na péči
-                <span class="pruhledne">1111111111</span>
+                <span className="pruhledne">1111111111</span>
                 <sub>
                   Podpora pro nemocné, kteří z potřebují pomoc při zvládání
                   základních životních potřeb.
@@ -41,11 +41,11 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </h2>
             <div
               id="flush-collapseOne"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               aria-labelledby="flush-headingOne"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <p>
                   {' '}
                   Příspěvek na péči je určen osobám, které kvůli nemoci, úrazu
@@ -72,17 +72,17 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               <a
                 href="https://pece.cz/prispevek-peci"
                 target="_blank"
-                class="btn btn-list_of_services"
+                className="btn btn-list_of_services"
               >
-                <span class="bold">Bližší informace o příspěvku na péči</span>
+                <span className="bold">Bližší informace o příspěvku na péči</span>
               </a>
             </div>
           </div>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="flush-headingTwo">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseTwo"
@@ -90,7 +90,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 aria-controls="flush-collapseTwo"
               >
                 Dlouhodobé ošetřovné
-                <span class="pruhledne">11111</span>
+                <span className="pruhledne">11111</span>
                 <sub>
                   Dlouhodobé ošetřovné umožňuje pečující osobě čerpat až 90
                   kalendářních dní pracovního volna.
@@ -99,11 +99,11 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </h2>
             <div
               id="flush-collapseTwo"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               aria-labelledby="flush-headingTwo"
               data-bs-parent="#flush-headingTwo"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <p>
                   {' '}
                   Dlouhodobé ošetřovné umožňuje čerpání až 90 kalendářních dní
@@ -139,19 +139,19 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               <a
                 href="https://www.cssz.cz/web/cz/podrobne-informace-o-dlouhodobem-osetrovnem"
                 target="_blank"
-                class="btn btn-list_of_services"
+                className="btn btn-list_of_services"
               >
-                <span class="bold">
+                <span className="bold">
                   Bližší informace o dlouhodobém ošetřovném
                 </span>
               </a>
             </div>
           </div>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="flush-headingThree">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseThree"
@@ -159,7 +159,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 aria-controls="flush-collapseThree"
               >
                 Příspěvek na zvláštní pomůcku
-                <span class="pruhledne">111111</span>
+                <span className="pruhledne">111111</span>
                 <sub>
                   Zvláštní pomůckou může být speciální počítač, schodolez,
                   schodová plošina nebo auto.
@@ -168,11 +168,11 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </h2>
             <div
               id="flush-collapseThree"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               aria-labelledby="flush-headingThree"
               data-bs-parent="#flush-headingThree"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <p>
                   Jedná se o pomůcky, které těmto lidem umožní sebeobsluhu, nebo
                   které tito lidé potřebují kvůli práci, studiu, získávání
@@ -205,26 +205,26 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               <a
                 href="https://www.mpsv.cz/-/zadost-o-prispevek-na-zvlastni-pomucku"
                 target="_blank"
-                class="btn btn-list_of_services"
+                className="btn btn-list_of_services"
               >
-                <span class="bold">
+                <span className="bold">
                   Bližší informace o příspěvku na zvláštní pomůcku
                 </span>
               </a>
             </div>
           </div>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-heading3">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="flush-heading3">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapse3"
                 aria-expanded="false"
                 aria-controls="flush-collapse3"
               >
-                Invalidní důchod<span class="pruhledne">11111</span>
+                Invalidní důchod<span className="pruhledne">11111</span>
                 <sub>
                   O invalidní důchod si mohou zažádat pacienti, kteří mají
                   sníženou pracovní schopnost{' '}
@@ -233,11 +233,11 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </h2>
             <div
               id="flush-collapse3"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               aria-labelledby="flush-heading3"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <p>
                   U dlouhodobě nemocných je často nutné řešit jiné formy
                   příspěvku než je nemocenská - ta se vyplácí pouze jeden rok.
@@ -265,24 +265,24 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               <a
                 href="https://www.cssz.cz/invalidni-duchod"
                 target="_blank"
-                class="btn btn-list_of_services"
+                className="btn btn-list_of_services"
               >
-                <span class="bold">Bližší informace o invalidním důchodu</span>
+                <span className="bold">Bližší informace o invalidním důchodu</span>
               </a>
             </div>
           </div>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-heading4">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="flush-heading4">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapse4"
                 aria-expanded="false"
                 aria-controls="flush-collapse4"
               >
-                Příspěvek na mobilitu<span class="pruhledne">11111</span>
+                Příspěvek na mobilitu<span className="pruhledne">11111</span>
                 <sub>
                   Příspěvek na mobilitu mohou využít držitelé průkazů ZTP a ZTTP
                   kteří se dopravují například k lékaři.
@@ -291,11 +291,11 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </h2>
             <div
               id="flush-collapse4"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               aria-labelledby="flush-heading4"
               data-bs-parent="#flush-heading4"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <p>
                   Příspěvek na mobilitu je definován jako opakující se nároková
                   dávka, na kterou mají nárok osoby starší jednoho roku, které
@@ -316,26 +316,26 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               <a
                 href="https://www.mpsv.cz/-/prispevek-na-mobilitu"
                 target="_blank"
-                class="btn btn-list_of_services"
+                className="btn btn-list_of_services"
               >
-                <span class="bold">
+                <span className="bold">
                   Bližší informace o příspěvku na mobilitu
                 </span>
               </a>
             </div>
           </div>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-heading6">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="flush-heading6">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapse6"
                 aria-expanded="false"
                 aria-controls="flush-collapse4"
               >
-                Další druhy podpory<span class="pruhledne">11111</span>
+                Další druhy podpory<span className="pruhledne">11111</span>
                 <sub>
                   Úprava pracovní doby, podpora v nezaměstnanosti, náhradní doba
                   pojištění
@@ -344,11 +344,11 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </h2>
             <div
               id="flush-collapse6"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               aria-labelledby="flush-heading6"
               data-bs-parent="#flush-heading6"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <p>Nárok na podporu v nezaměstnanosti</p>
                 <p>
                   Doba péče se hodnotí jako zaměstnání a započítává se do doby
@@ -384,9 +384,9 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               <a
                 href="https://socialnipolitika.eu/2021/01/na-co-maji-pecujici-osoby-narok/"
                 target="_blank"
-                class="btn btn-list_of_services"
+                className="btn btn-list_of_services"
               >
-                <span class="bold">Bližší informace o dalších podporách</span>
+                <span className="bold">Bližší informace o dalších podporách</span>
               </a>
             </div>
           </div>
