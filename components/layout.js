@@ -56,9 +56,9 @@ export default function Layout({ children, home }) {
       </Head>
 
       <header>
-        <nav class="navbar navbar-expand-lg navbar-light fix-top">
-          <div class="container-fluid">
-            <Link href="/" class="navbar-brand">
+        <nav className="navbar navbar-expand-lg navbar-light fix-top">
+          <div className="container-fluid">
+            <Link href="/" className="navbar-brand">
               <a>
                 <Image
                   priority
@@ -70,7 +70,7 @@ export default function Layout({ children, home }) {
               </a>
             </Link>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
@@ -78,14 +78,14 @@ export default function Layout({ children, home }) {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav">
+                <li className="nav-item">
                   <Link href="/organizations">
                     <a
-                      class={
+                      className={
                         router.pathname === '/organizations'
                           ? 'nav-link active'
                           : 'nav-link'
@@ -95,10 +95,10 @@ export default function Layout({ children, home }) {
                     </a>
                   </Link>
                 </li>
-                <li class="nav-item">
+                <li className="nav-item">
                   <Link href="/services">
                     <a
-                      class={
+                      className={
                         router.pathname === '/services'
                           ? 'nav-link active'
                           : 'nav-link'
@@ -108,10 +108,10 @@ export default function Layout({ children, home }) {
                     </a>
                   </Link>
                 </li>
-                <li class="nav-item">
+                <li className="nav-item">
                   <Link href="/financial-help">
                     <a
-                      class={
+                      className={
                         router.pathname === '/financial-help'
                           ? 'nav-link active'
                           : 'nav-link'
@@ -130,11 +130,11 @@ export default function Layout({ children, home }) {
       <footer>
         <p>
           <Link href="/about">
-            <a class={router.pathname === '/about' ? 'active' : ''}>O nás</a>
+            <a className={router.pathname === '/about' ? 'active' : ''}>O nás</a>
           </Link>
           {' | '}
           <Link href="/contact">
-            <a class={router.pathname === '/contact' ? 'active' : ''}>
+            <a className={router.pathname === '/contact' ? 'active' : ''}>
               Kontakt
             </a>
           </Link>
