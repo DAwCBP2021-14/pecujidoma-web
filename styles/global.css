@@ -300,6 +300,7 @@ sub {
 .listOfServices_img {
   max-width: 15vw;
   margin: 15px;
+  float: left;
 }
 
 .listOfServices__background--img {
