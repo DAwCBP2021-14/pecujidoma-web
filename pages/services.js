@@ -33,9 +33,8 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 Terénní odlehčovací služby
                 <span className="pruhledne">1111111</span>
                 <sub>
-                  Pomocná ruka pro všechny pečující, kteří si potřebují vyřídit
-                  nejnutnější záležitosti, odpočinout si od každodenní péče nebo
-                  se věnovat svým koníčkům.
+                  Pomocná ruka pro pečující, kteří si potřebují vyřídit to
+                  nejnutnější, odpočinout si nebo se věnovat svým koníčkům.
                 </sub>
               </button>
             </h2>
@@ -48,8 +47,8 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               <Image
                 src={`/img/Ikony/Ikona_pece.png`}
                 alt={`terenni_odlehcovaci_sluzby`}
-                width={350}
-                height={350}
+                width={250}
+                height={250}
                 objectFit="contain"
                 className="listOfServices_img"
               />
@@ -86,7 +85,6 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <span className="pruhledne">11111111111111111</span>
             <sub>
               Péče o nevyléčitelně nemocné pacienty v domácích podmínkách.
-              Domácí hospicová péče nabízí pomoc 24 hodin denně 7 dní v týdnu.
             </sub>
           </button>
         </h2>
@@ -133,8 +131,8 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
           >
             Osobní asistence<span className="pruhledne">111111111111111</span>
             <sub>
-              Pomoc a podpora pro pacienty při chodu domácnosti, hygieně, se
-              sociálními kontakty a dalšími potřebami.
+              Pomoc a podpora pro pacienty při chodu domácnosti, hygieně nebo
+              při sociálních kontaktech.
             </sub>
           </button>
         </h2>
@@ -229,8 +227,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             Půjčovna kompenzačních pomůcek
             <sub>
               Velká pomoc pro pečující rodiny i jejich pacienty jsou různé
-              kompenzační pomůcky, které pomohou ulehčit péči i každodenní běžné
-              fungování rodiny.
+              kompenzační pomůcky.
             </sub>
           </button>
         </h2>
@@ -261,174 +258,172 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </a>
           </Link>
         </div>
-        <form
-          method="GET"
-          action="/organizations"
-          className="services__form--display"
-        >
-          <div>
-            <select
-              name="town"
-              className="form-select form__lisOfServices"
-              aria-label="Default select example"
-            >
-              <option disabled>Vyberte město, kde chcete pečovat</option>
-              <option
-                className="listOfServices__dropdown--content"
-                value="borovany"
-              >
-                Borovany
-              </option>
-              <option
-                className="listOfServices__dropdown--content"
-                value="ceske-budejovice"
-              >
-                České Budějovice
-              </option>
-              <option
-                className="listOfServices__dropdown--content"
-                value="cesky-krumlov"
-              >
-                Český Krumlov
-              </option>
-              <option
-                className="listOfServices__dropdown--content"
-                value="dacice"
-              >
-                Dačice
-              </option>
-              <option
-                className="listOfServices__dropdown--content"
-                value="driten"
-              >
-                Dříteň
-              </option>
-              <option
-                className="listOfServices__dropdown--content"
-                value="kaplice"
-              >
-                Kaplice
-              </option>
-              <option
-                className="listOfServices__dropdown--content"
-                value="pisek"
-              >
-                Písek
-              </option>
-              <option
-                className="listOfServices__dropdown--content"
-                value="strakonice"
-              >
-                Strakonice
-              </option>
-              <option
-                className="listOfServices__dropdown--content"
-                value="tabor"
-              >
-                Tábor
-              </option>
-              <option
-                className="listOfServices__dropdown--content"
-                value="trhove-sviny"
-              >
-                Trhové Sviny
-              </option>
-              <option
-                className="listOfServices__dropdown--content"
-                value="trebon"
-              >
-                Třeboň
-              </option>
-              <option
-                className="listOfServices__dropdown--content"
-                value="tyn-nad-vltavou"
-              >
-                Týn nad Vltavou
-              </option>
-              <option
-                className="listOfServices__dropdown--content"
-                value="veseli-nad-luznici"
-              >
-                Veselí nad Lužnicí
-              </option>
-              <option
-                className="listOfServices__dropdown--content"
-                value="vimperk"
-              >
-                Vimperk
-              </option>
-            </select>
-          </div>
-          <h4>Vyberte služby, o které máte zájem:</h4>
-          <div>
-            <div className="form-check form-check-inline form__lisOfServices">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                id="inlineCheckbox1"
-                name="services"
-                value="service1"
-              />
-              <label className="form-check-label" htmlFor="inlineCheckbox1">
-                Terénní odlehčovací služby
-              </label>
-            </div>
-            <div className="form-check form-check-inline form__lisOfServices">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                id="inlineCheckbox2"
-                name="services"
-                value="service2"
-              />
-              <label className="form-check-label" htmlFor="inlineCheckbox2">
-                Paliativní péče
-              </label>
-            </div>
-            <div className="form-check form-check-inline form__lisOfServices">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                id="inlineCheckbox3"
-                name="services"
-                value="service3"
-              />
-              <label className="form-check-label" htmlFor="inlineCheckbox3">
-                Osobní asistence
-              </label>
-            </div>
-            <div className="form-check form-check-inline form__lisOfServices">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                id="inlineCheckbox4"
-                name="services"
-                value="service4"
-              />
-              <label className="form-check-label" htmlFor="inlineCheckbox4">
-                Psychologická péče
-              </label>
-            </div>
-            <div className="form-check form-check-inline form__lisOfServices">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                id="inlineCheckbox5"
-                name="services"
-                value="service5"
-              />
-              <label className="form-check-label" htmlFor="inlineCheckbox5">
-                Půjčovna kompenzačních pomůcek
-              </label>
-            </div>
-          </div>
-          <div className="services__form--btn-display">
-            <button className="btn services__form--btn" type="submit">
-              Najít službu
-            </button>
-          </div>
-        </form>
       </div>
+      <form
+        method="GET"
+        action="/organizations"
+        className="services__form--display"
+      >
+        <div>
+          <label for="town-select">
+            <h4>Vyberte město, kde chcete pečovat:</h4>
+          </label>
+          <select
+            id="town-select"
+            name="town"
+            className="form-select form__lisOfServices"
+            aria-label="Default select example"
+          >
+            <option disabled>Vyberte město, kde chcete pečovat</option>
+            <option
+              className="listOfServices__dropdown--content"
+              value="borovany"
+            >
+              Borovany
+            </option>
+            <option
+              className="listOfServices__dropdown--content"
+              value="ceske-budejovice"
+            >
+              České Budějovice
+            </option>
+            <option
+              className="listOfServices__dropdown--content"
+              value="cesky-krumlov"
+            >
+              Český Krumlov
+            </option>
+            <option
+              className="listOfServices__dropdown--content"
+              value="dacice"
+            >
+              Dačice
+            </option>
+            <option
+              className="listOfServices__dropdown--content"
+              value="driten"
+            >
+              Dříteň
+            </option>
+            <option
+              className="listOfServices__dropdown--content"
+              value="kaplice"
+            >
+              Kaplice
+            </option>
+            <option className="listOfServices__dropdown--content" value="pisek">
+              Písek
+            </option>
+            <option
+              className="listOfServices__dropdown--content"
+              value="strakonice"
+            >
+              Strakonice
+            </option>
+            <option className="listOfServices__dropdown--content" value="tabor">
+              Tábor
+            </option>
+            <option
+              className="listOfServices__dropdown--content"
+              value="trhove-sviny"
+            >
+              Trhové Sviny
+            </option>
+            <option
+              className="listOfServices__dropdown--content"
+              value="trebon"
+            >
+              Třeboň
+            </option>
+            <option
+              className="listOfServices__dropdown--content"
+              value="tyn-nad-vltavou"
+            >
+              Týn nad Vltavou
+            </option>
+            <option
+              className="listOfServices__dropdown--content"
+              value="veseli-nad-luznici"
+            >
+              Veselí nad Lužnicí
+            </option>
+            <option
+              className="listOfServices__dropdown--content"
+              value="vimperk"
+            >
+              Vimperk
+            </option>
+          </select>
+        </div>
+        <h4>Vyberte služby, o které máte zájem:</h4>
+        <div>
+          <div className="form-check form-check-inline form__lisOfServices">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              id="inlineCheckbox1"
+              name="services"
+              value="service1"
+            />
+            <label className="form-check-label" htmlFor="inlineCheckbox1">
+              Terénní odlehčovací služby
+            </label>
+          </div>
+          <div className="form-check form-check-inline form__lisOfServices">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              id="inlineCheckbox2"
+              name="services"
+              value="service2"
+            />
+            <label className="form-check-label" htmlFor="inlineCheckbox2">
+              Paliativní péče
+            </label>
+          </div>
+          <div className="form-check form-check-inline form__lisOfServices">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              id="inlineCheckbox3"
+              name="services"
+              value="service3"
+            />
+            <label className="form-check-label" htmlFor="inlineCheckbox3">
+              Osobní asistence
+            </label>
+          </div>
+          <div className="form-check form-check-inline form__lisOfServices">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              id="inlineCheckbox4"
+              name="services"
+              value="service4"
+            />
+            <label className="form-check-label" htmlFor="inlineCheckbox4">
+              Psychologická péče
+            </label>
+          </div>
+          <div className="form-check form-check-inline form__lisOfServices">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              id="inlineCheckbox5"
+              name="services"
+              value="service5"
+            />
+            <label className="form-check-label" htmlFor="inlineCheckbox5">
+              Půjčovna kompenzačních pomůcek
+            </label>
+          </div>
+        </div>
+        <div className="services__form--btn-display">
+          <button className="btn services__form--btn" type="submit">
+            Najít službu
+          </button>
+        </div>
+      </form>
     </Layout>
   );
 }
