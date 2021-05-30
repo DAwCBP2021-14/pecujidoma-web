@@ -9,7 +9,7 @@ export const siteTitle = 'Next.js Sample Website';
 export default function Layout({ children, home }) {
   const router = useRouter();
   return (
-    <div>
+    <body className="container_flex">
       <Head>
         <meta
           name="description"
@@ -127,10 +127,12 @@ export default function Layout({ children, home }) {
         </nav>
       </header>
       <main>{children}</main>
-      <footer>
+      <footer className="footer_flex">
         <p>
           <Link href="/about">
-            <a className={router.pathname === '/about' ? 'active' : ''}>O nás</a>
+            <a className={router.pathname === '/about' ? 'active' : ''}>
+              O nás
+            </a>
           </Link>
           {' | '}
           <Link href="/contact">
@@ -141,6 +143,6 @@ export default function Layout({ children, home }) {
         </p>
         <p>&copy; 2021, Vytvořeno při Digitální akademii WEB</p>
       </footer>
-    </div>
+    </body>
   );
 }
