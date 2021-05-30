@@ -634,6 +634,9 @@ sub {
   display: block;
 }
 
+.tym {
+  margin-top: 20px !important;
+}
 /***** footer ********/
 footer {
   background-color: #eda438;

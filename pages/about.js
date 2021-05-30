@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
+import Image from 'next/image';
 
 export default function Page({ allOrganizationsData: allOrganizationsData }) {
   return (
@@ -21,6 +22,17 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <span className="bold">Autorky webu: </span> Barbora Drachovská,
             Kristýna Říhová, Ivana Kubičková  
           </p>
+          <p>
+            <span className="bold">Náš skvělý mentor:</span> Martin Hlaváč{' '}
+          </p>
+          <Image
+            src={`/img/obrazky/tym.jpg`}
+            alt="Skvělý tým"
+            width={750}
+            height={450}
+            objectFit="contain"
+            className="tym"
+          />
         </div>
       </div>
     </Layout>
