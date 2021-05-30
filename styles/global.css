@@ -19,12 +19,16 @@ footer a.active {
   display: flex;
   height: 100vh;
   flex-direction: column;
-  justify-content: space-between;
 }
 .footer_flex {
   margin-top: auto;
 }
 
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
 /* 
    ORANŽOVÁ #eda438 */
 
@@ -95,6 +99,11 @@ nav ul li a:hover:after {
   width: 150px;
 }
 /* **************** INDEX.HTML ******************* */
+.index-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
 .index-heading {
   padding-bottom: 0;
 }
@@ -117,6 +126,7 @@ nav ul li a:hover:after {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 30px 365px 365px 50px;
   gap: 30px;
+  flex-grow: 1;
 }
 
 .index-box {
@@ -397,6 +407,10 @@ sub {
   background-position: center;
   background-attachment: fixed;
   padding: 30px 0 5px 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 /* seznam organizací - jedna karta  */
@@ -680,6 +694,12 @@ footer a:hover {
 
   .list-of-org .text-margin {
     margin: -5px auto 15px auto;
+  }
+
+  .list-of-org {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
   /* třídění organizací */
   .org-sorted {
