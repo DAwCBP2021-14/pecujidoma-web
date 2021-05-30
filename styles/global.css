@@ -15,7 +15,7 @@ footer a.active {
   border-radius: 4px;
   color: white;
 }
-body {
+.container_flex {
   display: flex;
   height: 100vh;
   flex-direction: column;

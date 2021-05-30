@@ -9,7 +9,7 @@ export const siteTitle = 'Next.js Sample Website';
 export default function Layout({ children, home }) {
   const router = useRouter();
   return (
-    <body className="container_flex">
+    <>
       <Head>
         <meta
           name="description"
@@ -54,95 +54,96 @@ export default function Layout({ children, home }) {
           crossOrigin="anonymous"
         ></script>
       </Head>
-
-      <header>
-        <nav className="navbar navbar-expand-lg navbar-light fix-top">
-          <div className="container-fluid">
-            <Link href="/" className="navbar-brand">
-              <a>
-                <Image
-                  priority
-                  src="/img/LogoSkia.png"
-                  width={150}
-                  height={75}
-                  alt="logo"
-                />
+      <div className="container_flex">
+        <header>
+          <nav className="navbar navbar-expand-lg navbar-light fix-top">
+            <div className="container-fluid">
+              <Link href="/" className="navbar-brand">
+                <a>
+                  <Image
+                    priority
+                    src="/img/LogoSkia.png"
+                    width={150}
+                    height={75}
+                    alt="logo"
+                  />
+                </a>
+              </Link>
+              <button
+                className="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className="navbar-nav">
+                  <li className="nav-item">
+                    <Link href="/organizations">
+                      <a
+                        className={
+                          router.pathname === '/organizations'
+                            ? 'nav-link active'
+                            : 'nav-link'
+                        }
+                      >
+                        Seznam organizací
+                      </a>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link href="/services">
+                      <a
+                        className={
+                          router.pathname === '/services'
+                            ? 'nav-link active'
+                            : 'nav-link'
+                        }
+                      >
+                        Přehled služeb
+                      </a>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link href="/financial-help">
+                      <a
+                        className={
+                          router.pathname === '/financial-help'
+                            ? 'nav-link active'
+                            : 'nav-link'
+                        }
+                      >
+                        Finanční pomoc
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <main>{children}</main>
+        <footer className="footer_flex">
+          <p>
+            <Link href="/about">
+              <a className={router.pathname === '/about' ? 'active' : ''}>
+                O nás
               </a>
             </Link>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
-                <li className="nav-item">
-                  <Link href="/organizations">
-                    <a
-                      className={
-                        router.pathname === '/organizations'
-                          ? 'nav-link active'
-                          : 'nav-link'
-                      }
-                    >
-                      Seznam organizací
-                    </a>
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link href="/services">
-                    <a
-                      className={
-                        router.pathname === '/services'
-                          ? 'nav-link active'
-                          : 'nav-link'
-                      }
-                    >
-                      Přehled služeb
-                    </a>
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link href="/financial-help">
-                    <a
-                      className={
-                        router.pathname === '/financial-help'
-                          ? 'nav-link active'
-                          : 'nav-link'
-                      }
-                    >
-                      Finanční pomoc
-                    </a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <main>{children}</main>
-      <footer className="footer_flex">
-        <p>
-          <Link href="/about">
-            <a className={router.pathname === '/about' ? 'active' : ''}>
-              O nás
-            </a>
-          </Link>
-          {' | '}
-          <Link href="/contact">
-            <a className={router.pathname === '/contact' ? 'active' : ''}>
-              Kontakt
-            </a>
-          </Link>
-        </p>
-        <p>&copy; 2021, Vytvořeno při Digitální akademii WEB</p>
-      </footer>
-    </body>
+            {' | '}
+            <Link href="/contact">
+              <a className={router.pathname === '/contact' ? 'active' : ''}>
+                Kontakt
+              </a>
+            </Link>
+          </p>
+          <p>&copy; 2021, Vytvořeno při Digitální akademii WEB</p>
+        </footer>
+      </div>
+    </>
   );
 }
