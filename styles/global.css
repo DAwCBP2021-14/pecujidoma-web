@@ -22,7 +22,7 @@ footer a.active {
   justify-content: space-between;
 }
 .footer_flex {
-  flex-grow: 1;
+  margin-top: auto;
 }
 /* 
    ORANŽOVÁ #eda438 */
