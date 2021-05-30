@@ -1,7 +1,7 @@
 ---
 name: 'Testovací organizace'
 logo: 'Ledax.jpg'
-town: 'Písek
+town: 'Písek'
 url: 'http://test.test'
 email: 'test@test.test'
 phone: '123456789'
