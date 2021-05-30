@@ -3,8 +3,18 @@ import Layout, { siteTitle } from '../components/layout';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getSortedOrganizationsData } from '../lib/organizations';
+import { useState } from 'react';
 
 export default function Page({ allOrganizationsData: allOrganizationsData }) {
+  const [typeOfFilter, setTypeOfFilter] = useState('');
+
+  if (typeOfFilter === 'organization-name') {
+    console.log('řazení dle názvu organizace');
+  } else if (typeOfFilter === 'town-name') {
+    console.log('řazení dle návvu mesta');
+  }
+
+  console.log(typeOfFilter);
   return (
     <Layout page>
       <Head>
@@ -23,9 +33,13 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
         <div className="card-container">
           <div className="org-sorted">
             <label for="org">
-              <select id="org">
+              <select
+                id="org"
+                value={typeOfFilter}
+                onChange={(event) => setTypeOfFilter(event.target.value)}
+              >
                 <option value="placeholder">Řažení podle:</option>
-                <option value="company-name">názvu organizace</option>
+                <option value="organization-name">názvu organizace</option>
                 <option value="town-name">názvu města</option>
               </select>
             </label>
@@ -63,20 +77,20 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </div>
           ))}
 
-          <nav class="pages" aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-              <li class="page-item">
-                <a class="page-link" href="#">
+          <nav className="pages" aria-label="Page navigation example">
+            <ul className="pagination justify-content-center">
+              <li className="page-item">
+                <a className="page-link" href="#">
                   1
                 </a>
               </li>
-              <li class="page-item">
-                <a class="page-link" href="#">
+              <li className="page-item">
+                <a className="page-link" href="#">
                   2
                 </a>
               </li>
-              <li class="page-item">
-                <a class="page-link" href="#">
+              <li className="page-item">
+                <a className="page-link" href="#">
                   3
                 </a>
               </li>
