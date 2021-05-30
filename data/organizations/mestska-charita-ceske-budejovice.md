@@ -12,5 +12,5 @@ service4: false
 service5: true
 ---
 
-Hlavníčinností **Městské charity České Budějovice** je poskytování sociálních a zdravotních služeb na území města České Budějovice a přilehlých obcí.
+Hlavní činností **Městské charity České Budějovice** je poskytování sociálních a zdravotních služeb na území města České Budějovice a přilehlých obcí.
 **Městské charity České Budějovice** je členem organizace Charita Česká republika, která je v rámci sítě Charit největším nestátním poskytovatelem sociálně zdravotních služeb v ČR.
