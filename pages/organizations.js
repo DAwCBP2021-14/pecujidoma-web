@@ -37,18 +37,30 @@ export default function Page({ allOrganizationsData: allOrganizationsData, allOr
         </p>
         <div className="card-container">
           <div className="org-sorted">
-            <label htmlFor="org">
-              <select
-                id="org"
-                name="sortBy"
-                value={(router.query.sort ?? "name")}
-                onChange={sortChanged}
-              >
-                <option disabled>Vyberte způsob řazení</option>
-                <option value="name">Řažení podle názvu organizace</option>
-                <option value="town">Řažení podle názvu města</option>
-              </select>
-            </label>
+            {router.query.town ? (
+              <>
+                <span>Máte aktivní filtrování z přehledu služeb.</span>
+                {' '}
+                <Link href={`/organizations/`}>
+                  <a className="btn card-org__town">
+                    <span className="bold">Zrušit</span>
+                  </a>
+                </Link>
+              </>
+            ) : (
+              <label htmlFor="org">
+                <select
+                  id="org"
+                  name="sort"
+                  value={(router.query.sort ?? "name")}
+                  onChange={sortChanged}
+                >
+                  <option disabled>Vyberte způsob řazení</option>
+                  <option value="name">Řažení podle názvu organizace</option>
+                  <option value="town">Řažení podle názvu města</option>
+                </select>
+              </label>
+            )}
           </div>
 
           {allOrganizationsData.map(({ id, name, town, url, logo }) => (
@@ -83,17 +95,22 @@ export default function Page({ allOrganizationsData: allOrganizationsData, allOr
             </div>
           ))}
 
-          <nav className="pages" aria-label="Page navigation example">
-            <ul className="pagination justify-content-center">
-              {Array.from(Array(allOrganizationsPagesCount).keys()).map(pageIndex => (
-                <li className={(router.query.page ?? 1) == (pageIndex + 1) ? 'page-item active' : 'page-item'} key={pageIndex}>
-                  <Link href={`/organizations?page=${pageIndex + 1}&sort=${router.query.sort}`}>
-                    <a className="page-link">{pageIndex + 1}</a>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          {router.query.town ? (
+            <>
+            </>
+          ) : (
+            <nav className="pages" aria-label="Page navigation example">
+              <ul className="pagination justify-content-center">
+                {Array.from(Array(allOrganizationsPagesCount).keys()).map(pageIndex => (
+                  <li className={(router.query.page ?? 1) == (pageIndex + 1) ? 'page-item active' : 'page-item'} key={pageIndex}>
+                    <Link href={`/organizations?page=${pageIndex + 1}&sort=${router.query.sort}`}>
+                      <a className="page-link">{pageIndex + 1}</a>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
         </div>
       </div>
     </Layout>
