@@ -19,11 +19,9 @@ footer a.active {
   display: flex;
   height: 100vh;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
-.footer_flex {
-  margin-top: auto;
-}
+
 /* 
    ORANŽOVÁ #eda438 */
 
