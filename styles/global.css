@@ -760,4 +760,7 @@ footer a:hover {
   .pruhledne {
     display: none;
   }
+  img.listOfServices_img {
+    display: none !important;
+  }
 }
