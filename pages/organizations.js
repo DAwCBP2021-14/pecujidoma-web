@@ -49,6 +49,11 @@ export default function Page({
                       <span className="bold">Zrušit filtrování</span>
                     </a>
                   </Link>
+                  <Link href={`/services/`}>
+                    <a className="btn btn-message">
+                      <span className="bold">Zpět na výběr služby a města</span>
+                    </a>
+                  </Link>
                 </div>
               </>
             ) : (
@@ -104,7 +109,7 @@ export default function Page({
           ) : (
             <>
               <p className="message message-nic">
-                Vaše mu fitlrování neodpovídají žádné organizace
+                Vašemu filtru neodpovídají žádné organizace
               </p>
             </>
           )}

@@ -386,8 +386,21 @@ sub {
   padding: 5px;
 }
 
+.message {
+  align-items: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 18px;
+  height: 220px;
+  min-width: 350px;
+  justify-content: space-between;
+}
+
 .btn-message {
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 .message-nic {
@@ -672,22 +685,12 @@ footer a:hover {
   }
 
   /******************* LISTOFORG.HTML************* */
-
   .message {
-    align-items: center;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    font-weight: 700;
-    font-size: 18px;
-    height: 100px;
-    min-width: 350px;
-    justify-content: space-between;
+    height: 180px;
   }
 
-  .btn-message {
-    margin: 0 auto;
+  .btn-message span {
+    margin: 10px auto 10px auto;
   }
 
   .message-nic {
