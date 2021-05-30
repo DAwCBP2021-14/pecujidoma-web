@@ -11,3 +11,5 @@ service3: true
 service4: false
 service5: true
 ---
+
+**Oblastní charita Strakonice** je samostatnou organizační jednotkou církve s vlastní právní subjektivitou. Je součástí Diecézní Charity České Budějovice. Působí na **Strakonicku, Blatensku, Volyňsku, Česticku, Radomyšlsku, Osecku**.
