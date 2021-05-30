@@ -7,8 +7,8 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
       <Head>
         <title>Finanční pomoc</title>
       </Head>
-      <div className="index-container  listOfServices__background--img">
-        <div className="index-intro">
+      <div className="index-container">
+        <div className="index-intro listOfServices__background--img">
           <h2 className="headings index-heading">Finanční pomoc</h2>
           <p className="intro__text bold">
             Když se rozhodnete pečovat doma, je nezbytné zajistit finanční

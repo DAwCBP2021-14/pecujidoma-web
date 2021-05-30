@@ -10,8 +10,8 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
       <Head>
         <title>Přehled služeb</title>
       </Head>
-      <div className="index-container listOfServices__background--img">
-        <div className="index-intro">
+      <div className="index-container ">
+        <div className="index-intro listOfServices__background--img">
           <h2 className="headings index-heading">Přehled služeb</h2>
           <p className="intro__text bold">
             Veškeré služby, které vám mohou pomoci v péči o vaše blízké, najdete
