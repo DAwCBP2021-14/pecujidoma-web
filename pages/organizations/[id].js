@@ -55,7 +55,9 @@ export default function Organization({ organizationData: organizationData }) {
         <div className="detail__description">
           <h3>Popis služeb</h3>
           <ul className="detail__description-services">
-            <li className="true">
+            <li
+              className={organizationData.service1 === true ? 'true' : 'false'}
+            >
               <Image
                 src={`/img/ikony/ikona_pece.png`}
                 alt="Ikona Terenní odlehčovací služba"
@@ -67,7 +69,9 @@ export default function Organization({ organizationData: organizationData }) {
               Terénní odlehčovací služba (pečovatelská služba + domácí zdravotní
               péče)
             </li>
-            <li className="true">
+            <li
+              className={organizationData.service2 === true ? 'true' : 'false'}
+            >
               <Image
                 src={`/img/ikony/ikona_hospic.png`}
                 alt="Ikona hospic"
@@ -78,7 +82,9 @@ export default function Organization({ organizationData: organizationData }) {
               />
               Paliativní péče (domácí hospic + paliativní lůžka)
             </li>
-            <li className="false">
+            <li
+              className={organizationData.service3 === true ? 'true' : 'false'}
+            >
               <Image
                 src={`/img/ikony/ikona_osobni_asistence.png`}
                 alt="Ikona osobní asistence"
@@ -89,7 +95,9 @@ export default function Organization({ organizationData: organizationData }) {
               />
               Osobní asistence
             </li>
-            <li className="false">
+            <li
+              className={organizationData.service4 === true ? 'true' : 'false'}
+            >
               <Image
                 src={`/img/ikony/ikona_psycholog.png`}
                 alt="Ikona psychologiská péče"
@@ -100,7 +108,9 @@ export default function Organization({ organizationData: organizationData }) {
               />
               Psychologická péče
             </li>
-            <li className="true">
+            <li
+              className={organizationData.service5 === true ? 'true' : 'false'}
+            >
               <Image
                 src={`/img/ikony/ikona_pujcovna.png`}
                 alt="Ikona půjčovna"
