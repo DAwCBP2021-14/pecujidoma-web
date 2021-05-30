@@ -340,6 +340,11 @@ sub {
   margin: 15px;
 }
 
+.services__form--btn:hover {
+  background-color: rgb(252, 167, 40);
+  color: white;
+}
+
 /******************* LISTOFORG.HTML************* */
 
 /* třídění organizací */
