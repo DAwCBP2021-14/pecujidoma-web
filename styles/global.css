@@ -324,6 +324,21 @@ sub {
 .btn-primary:hover {
   background-color: rgb(252, 167, 40);
 }
+.services__form--display {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+}
+
+.services__form--btn-display {
+  display: flex;
+  justify-content: right;
+}
+
+.services__form--btn {
+  display: flex;
+  margin: 15px;
+}
 
 /******************* LISTOFORG.HTML************* */
 
