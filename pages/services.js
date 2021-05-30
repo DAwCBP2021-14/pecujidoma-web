@@ -49,7 +49,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               data-bs-parent="#accordionFlushExample"
             >
               <Image
-                src={`/img/obrazky/listOfServices1.jpg`}
+                src={`/img/Ikony/Ikona_pece.png`}
                 alt={`terenni_odlehcovaci_sluzby`}
                 width={350}
                 height={350}
@@ -63,7 +63,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 zdravotní sestra a postará se o vše potřebné. Vašim blízkým bude
                 poskytnuta profesionální péče a vy získáte trochu volného času.
               </div>
-              <Link href={`/organizations`}>
+              <Link href={`/organizations?services=service1`}>
                 <a className="btn btn-list_of_services">
                   <span className="bold">
                     Organizace poskytující terénní odlehčovací služby
@@ -100,10 +100,10 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
           data-bs-parent="#flush-headingTwo"
         >
           <Image
-            src={`/img/obrazky/listOfServices2.jpg`}
+            src={`/img/Ikony/Ikona_hospic.png`}
             alt={`paliativní péče`}
-            width={350}
-            height={350}
+            width={250}
+            height={250}
             objectFit="contain"
             className="listOfServices_img"
           />
@@ -114,7 +114,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             léků, zdravotní péči, s hygienou nemocného nebo psychologickou a
             sociální podporu.
           </div>
-          <Link href={`/organizations`}>
+          <Link href={`/organizations?services=service2`}>
             <a className="btn btn-list_of_services">
               <span className="bold">
                 Organizace poskytující paliativní péči
@@ -148,10 +148,10 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
           data-bs-parent="#flush-headingThree"
         >
           <Image
-            src={`/img/obrazky/listOfServices3.jpg`}
+            src={`/img/Ikony/Ikona_osobni_asistence.png`}
             alt={`osobní asistence`}
-            width={350}
-            height={350}
+            width={250}
+            height={250}
             objectFit="contain"
             className="listOfServices_img"
           />
@@ -162,7 +162,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             postižení, věku nebo nemoci potřebují pomoc v běžných činnostech
             života.
           </div>
-          <Link href={`/organizations`}>
+          <Link href={`/organizations?services=service3`}>
             <a className="btn btn-list_of_services">
               <span className="bold">
                 Organizace poskytující osobní asistenci
@@ -196,10 +196,10 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
           data-bs-parent="#accordionFlushExample"
         >
           <Image
-            src={`/img/obrazky/listOfServices4.jpg`}
+            src={`/img/Ikony/Ikona_psycholog.png`}
             alt={`psychologická péče`}
-            width={350}
-            height={350}
+            width={250}
+            height={250}
             objectFit="contain"
             className="listOfServices_img"
           />
@@ -209,7 +209,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             pomůže v těžké situaci. Nebojte se obrátit na odborníky, kteří vám
             mohou v náročném životním období ulehčit.
           </div>
-          <Link href={`/organizations`}>
+          <Link href={`/organizations?services=service4`}>
             <a className="btn btn-list_of_services">
               <span className="bold">
                 Organizace poskytující psychologickou péči
@@ -244,7 +244,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
           data-bs-parent="#flush-heading4"
         >
           <Image
-            src={`/img/obrazky/listOfServices5.jpg`}
+            src={`/img/Ikony/Ikona_pujcovna.png`}
             alt={`půjčovna kompenzačních pomůcek`}
             width={350}
             height={350}
@@ -258,7 +258,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             možností od polohovacích postelí, vozíků, chodítek, až po
             oxygenátory či lienární dávkovače léků.
           </div>
-          <Link href={`/organizations`}>
+          <Link href={`/organizations?services=service5`}>
             <a className="btn btn-list_of_services">
               <span className="bold">Půjčovny kompenzačních pomůcek</span>
             </a>
@@ -276,46 +276,88 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               aria-label="Default select example"
             >
               <option disabled>Vyberte město, kde chcete pečovat</option>
-              <option className="listOfServices__dropdown--content" value="borovany">
+              <option
+                className="listOfServices__dropdown--content"
+                value="borovany"
+              >
                 Borovany
               </option>
-              <option className="listOfServices__dropdown--content" value="ceske-budejovice">
+              <option
+                className="listOfServices__dropdown--content"
+                value="ceske-budejovice"
+              >
                 České Budějovice
               </option>
-              <option className="listOfServices__dropdown--content" value="cesky-krumlov">
+              <option
+                className="listOfServices__dropdown--content"
+                value="cesky-krumlov"
+              >
                 Český Krumlov
               </option>
-              <option className="listOfServices__dropdown--content" value="dacice">
+              <option
+                className="listOfServices__dropdown--content"
+                value="dacice"
+              >
                 Dačice
               </option>
-              <option className="listOfServices__dropdown--content" value="driten">
+              <option
+                className="listOfServices__dropdown--content"
+                value="driten"
+              >
                 Dříteň
               </option>
-              <option className="listOfServices__dropdown--content" value="kaplice">
+              <option
+                className="listOfServices__dropdown--content"
+                value="kaplice"
+              >
                 Kaplice
               </option>
-              <option className="listOfServices__dropdown--content" value="pisek">
+              <option
+                className="listOfServices__dropdown--content"
+                value="pisek"
+              >
                 Písek
               </option>
-              <option className="listOfServices__dropdown--content" value="strakonice">
+              <option
+                className="listOfServices__dropdown--content"
+                value="strakonice"
+              >
                 Strakonice
               </option>
-              <option className="listOfServices__dropdown--content" value="tabor">
+              <option
+                className="listOfServices__dropdown--content"
+                value="tabor"
+              >
                 Tábor
               </option>
-              <option className="listOfServices__dropdown--content" value="trhove-sviny">
+              <option
+                className="listOfServices__dropdown--content"
+                value="trhove-sviny"
+              >
                 Trhové Sviny
               </option>
-              <option className="listOfServices__dropdown--content" value="trebon">
+              <option
+                className="listOfServices__dropdown--content"
+                value="trebon"
+              >
                 Třeboň
               </option>
-              <option className="listOfServices__dropdown--content" value="tyn-nad-vltavou">
+              <option
+                className="listOfServices__dropdown--content"
+                value="tyn-nad-vltavou"
+              >
                 Týn nad Vltavou
               </option>
-              <option className="listOfServices__dropdown--content" value="veseli-nad-luznici">
+              <option
+                className="listOfServices__dropdown--content"
+                value="veseli-nad-luznici"
+              >
                 Veselí nad Lužnicí
               </option>
-              <option className="listOfServices__dropdown--content" value="vimperk">
+              <option
+                className="listOfServices__dropdown--content"
+                value="vimperk"
+              >
                 Vimperk
               </option>
             </select>
