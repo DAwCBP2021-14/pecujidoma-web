@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 const APP_NAME = 'Pečuji doma';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'Pečuji doma';
 
 export default function Layout({ children, home }) {
   const router = useRouter();
