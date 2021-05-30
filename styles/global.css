@@ -228,7 +228,7 @@ nav ul li a:hover:after {
 .result__answer {
   width: 350px;
   position: fixed;
-  top: 12%;
+  top: 1%;
   left: 50%;
   padding: 30px;
   transform: translate(-50%, 25%);
@@ -661,6 +661,7 @@ footer a:hover {
   /* ******** form-result.html********** */
   .result__answer {
     width: 650px;
+    top: 10%;
   }
   .result-btn {
     margin-top: 20px;
