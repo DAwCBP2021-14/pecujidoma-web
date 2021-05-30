@@ -11,3 +11,5 @@ service3: false
 service4: false
 service5: true
 ---
+
+**Domácí péče Dačice** poskytuje služby 24 hodin denně, 7 dnů v týdnu, zajišťují hospicovou péči hrazenou zdravotní pojišťovnou, zdravotní péče je hrazena zdrav. pojišťovnami po indikaci ošetřujícího lékaře. Pomáhají pacientům všech věkových kategorií.

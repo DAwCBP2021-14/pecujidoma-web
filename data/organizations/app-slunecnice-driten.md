@@ -11,3 +11,5 @@ service3: true
 service4: false
 service5: true
 ---
+
+**Asistence Pomoc a Péče Slunečnice** poskytuje terénní sociální služby osobní asistence a další související služby, například výtvarné aktivity s klienty, setkávání seniorů nebo podporuje pečující ve venkovské komunitě.

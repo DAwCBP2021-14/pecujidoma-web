@@ -11,3 +11,5 @@ service3: false
 service4: true
 service5: true
 ---
+
+**Hospicová péče sv. Kleofáše Třeboň** poskytuje podporu a pomoc všem, které potkala nevyléčitelná nemoc a dovedla je až k závěru jejich životní pouti - těm, kterým stáří, onemocnění či zdravotní postižení znesnadňují žít samostatně a všem jejich blízkým, kteří se o ně starají. Služby nabízí v regionu Třeboňska a Jindřichohradecka.
