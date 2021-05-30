@@ -49,6 +49,9 @@ export default function Organization({ organizationData: organizationData }) {
             </ul>
           </div>
         </div>
+        <div
+          dangerouslySetInnerHTML={{ __html: organizationData.contentHtml }}
+        />
         <div className="detail__description">
           <h3>Popis služeb</h3>
           <ul className="detail__description-services">
