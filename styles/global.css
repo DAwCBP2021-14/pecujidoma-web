@@ -15,7 +15,15 @@ footer a.active {
   border-radius: 4px;
   color: white;
 }
-
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-items: space-between;
+}
+.footer_flex {
+  margin-top: auto;
+}
 /* 
    ORANŽOVÁ #eda438 */
 
