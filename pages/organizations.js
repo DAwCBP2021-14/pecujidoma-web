@@ -32,7 +32,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
         </p>
         <div className="card-container">
           <div className="org-sorted">
-            <label for="org">
+            <label htmlFor="org">
               <select
                 id="org"
                 value={typeOfFilter}
@@ -46,7 +46,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
           </div>
 
           {allOrganizationsData.map(({ id, name, town, url, logo }) => (
-            <div className="card-org">
+            <div className="card-org" key={id}>
               <div className="card-org-flex">
                 <div className="card-org__item card-org__item--logo">
                   <div className="card-org__logo">

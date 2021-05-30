@@ -23,10 +23,10 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </p>
 
             <input type="radio" id="yes1" name="zdravotni" value="true" />
-            <label for="yes1">ANO</label>
+            <label htmlFor="yes1">ANO</label>
 
             <input type="radio" id="no1" name="zdravotni" value="false" />
-            <label for="no1">NE</label>
+            <label htmlFor="no1">NE</label>
           </div>
 
           <div className="question">
@@ -35,9 +35,9 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               soběstačností při péči o sebe nebo o domácnost?
             </p>
             <input type="radio" id="yes2" name="pecovatelska" value="true" />
-            <label for="yes2">ANO</label>
+            <label htmlFor="yes2">ANO</label>
             <input type="radio" id="no2" name="pecovatelska" value="false" />
-            <label for="no2">NE</label>
+            <label htmlFor="no2">NE</label>
           </div>
 
           <div className="question">
@@ -46,9 +46,9 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               (např. 4 hodiny denně)?
             </p>
             <input type="radio" id="yes3" name="terenni" value="true" />
-            <label for="yes3">ANO</label>
+            <label htmlFor="yes3">ANO</label>
             <input type="radio" id="no3" name="terenni" value="false" />
-            <label for="no3">NE</label>
+            <label htmlFor="no3">NE</label>
           </div>
 
           <div className="question">
@@ -57,9 +57,9 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               aktivní léčbu?
             </p>
             <input type="radio" id="yes4" name="palliativni" value="true" />
-            <label for="yes4">ANO</label>
+            <label htmlFor="yes4">ANO</label>
             <input type="radio" id="no4" name="palliativni" value="false" />
-            <label for="no4">NE</label>
+            <label htmlFor="no4">NE</label>
           </div>
 
           <div className="question">
@@ -68,9 +68,9 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               byste si ho vzít domů?
             </p>
             <input type="radio" id="yes5" name="hospic" value="true" />
-            <label for="yes5">ANO</label>
+            <label htmlFor="yes5">ANO</label>
             <input type="radio" id="no5" name="hospic" value="false" />
-            <label for="no5">NE</label>
+            <label htmlFor="no5">NE</label>
           </div>
 
           <div className="question">
@@ -82,9 +82,9 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               samostatně?
             </p>
             <input type="radio" id="yes6" name="asistence" value="true" />
-            <label for="yes6">ANO</label>
+            <label htmlFor="yes6">ANO</label>
             <input type="radio" id="no6" name="asistence" value="false" />
-            <label for="no6">NE</label>
+            <label htmlFor="no6">NE</label>
           </div>
 
           <div className="question">
@@ -93,9 +93,9 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               pečujete?
             </p>
             <input type="radio" id="yes7" name="psycho" value="true" />
-            <label for="yes7">ANO</label>
+            <label htmlFor="yes7">ANO</label>
             <input type="radio" id="no7" name="psycho" value="false" />
-            <label for="no7">NE</label>
+            <label htmlFor="no7">NE</label>
           </div>
 
           <div className="question">
@@ -104,9 +104,9 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               invalidní vozík, oxygenátor nebo toaletní křeslo?
             </p>
             <input type="radio" id="yes8" name="pomucky" value="true" />
-            <label for="yes8">ANO</label>
+            <label htmlFor="yes8">ANO</label>
             <input type="radio" id="no8" name="pomucky" value="false" />
-            <label for="no8">NE</label>
+            <label htmlFor="no8">NE</label>
           </div>
 
           <input
