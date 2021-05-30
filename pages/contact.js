@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
+import Image from 'next/image';
 
 export default function Page({ allOrganizationsData: allOrganizationsData }) {
   const contactForm = async (event) => {
@@ -79,7 +80,13 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             aria-describedby="basic-addon2"
           />
           <span className="input-group-text" id="basic-addon444">
-            <i className="fas fa-phone"></i>
+            <Image
+              src={`/img/Ikony/phone.png`}
+              alt="telefon"
+              width={30}
+              height={20}
+              objectFit="contain"
+            />
           </span>
         </div>
 
