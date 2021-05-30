@@ -271,114 +271,120 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
         >
           <div>
             <select
-              class="form-select form__lisOfServices"
+              name="town"
+              className="form-select form__lisOfServices"
               aria-label="Default select example"
             >
-              <option selected>Vyberte město, kde chcete pečovat</option>
-              <option class="listOfServices__dropdown--content" value="1">
+              <option disabled>Vyberte město, kde chcete pečovat</option>
+              <option className="listOfServices__dropdown--content" value="borovany">
                 Borovany
               </option>
-              <option class="listOfServices__dropdown--content" value="2">
+              <option className="listOfServices__dropdown--content" value="ceske-budejovice">
                 České Budějovice
               </option>
-              <option class="listOfServices__dropdown--content" value="3">
+              <option className="listOfServices__dropdown--content" value="cesky-krumlov">
                 Český Krumlov
               </option>
-              <option class="listOfServices__dropdown--content" value="4">
+              <option className="listOfServices__dropdown--content" value="dacice">
                 Dačice
               </option>
-              <option class="listOfServices__dropdown--content" value="5">
+              <option className="listOfServices__dropdown--content" value="driten">
                 Dříteň
               </option>
-              <option class="listOfServices__dropdown--content" value="6">
+              <option className="listOfServices__dropdown--content" value="kaplice">
                 Kaplice
               </option>
-              <option class="listOfServices__dropdown--content" value="7">
+              <option className="listOfServices__dropdown--content" value="pisek">
                 Písek
               </option>
-              <option class="listOfServices__dropdown--content" value="8">
+              <option className="listOfServices__dropdown--content" value="strakonice">
                 Strakonice
               </option>
-              <option class="listOfServices__dropdown--content" value="9">
+              <option className="listOfServices__dropdown--content" value="tabor">
                 Tábor
               </option>
-              <option class="listOfServices__dropdown--content" value="10">
+              <option className="listOfServices__dropdown--content" value="trhove-sviny">
                 Trhové Sviny
               </option>
-              <option class="listOfServices__dropdown--content" value="11">
+              <option className="listOfServices__dropdown--content" value="trebon">
                 Třeboň
               </option>
-              <option class="listOfServices__dropdown--content" value="12">
+              <option className="listOfServices__dropdown--content" value="tyn-nad-vltavou">
                 Týn nad Vltavou
               </option>
-              <option class="listOfServices__dropdown--content" value="13">
+              <option className="listOfServices__dropdown--content" value="veseli-nad-luznici">
                 Veselí nad Lužnicí
               </option>
-              <option class="listOfServices__dropdown--content" value="14">
+              <option className="listOfServices__dropdown--content" value="vimperk">
                 Vimperk
               </option>
             </select>
           </div>
           <h4>Vyberte služby, o které máte zájem:</h4>
           <div>
-            <div class="form-check form-check-inline form__lisOfServices">
+            <div className="form-check form-check-inline form__lisOfServices">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 id="inlineCheckbox1"
-                value="option1"
+                name="services"
+                value="service1"
               />
-              <label class="form-check-label" htmlFor="inlineCheckbox1">
+              <label className="form-check-label" htmlFor="inlineCheckbox1">
                 Terénní odlehčovací služby
               </label>
             </div>
-            <div class="form-check form-check-inline form__lisOfServices">
+            <div className="form-check form-check-inline form__lisOfServices">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 id="inlineCheckbox2"
-                value="option2"
+                name="services"
+                value="service2"
               />
-              <label class="form-check-label" htmlFor="inlineCheckbox2">
+              <label className="form-check-label" htmlFor="inlineCheckbox2">
                 Paliativní péče
               </label>
             </div>
-            <div class="form-check form-check-inline form__lisOfServices">
+            <div className="form-check form-check-inline form__lisOfServices">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 id="inlineCheckbox3"
-                value="option3"
+                name="services"
+                value="service3"
               />
-              <label class="form-check-label" htmlFor="inlineCheckbox3">
+              <label className="form-check-label" htmlFor="inlineCheckbox3">
                 Osobní asistence
               </label>
             </div>
-            <div class="form-check form-check-inline form__lisOfServices">
+            <div className="form-check form-check-inline form__lisOfServices">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 id="inlineCheckbox4"
-                value="option4"
+                name="services"
+                value="service4"
               />
-              <label class="form-check-label" htmlFor="inlineCheckbox4">
+              <label className="form-check-label" htmlFor="inlineCheckbox4">
                 Psychologická péče
               </label>
             </div>
-            <div class="form-check form-check-inline form__lisOfServices">
+            <div className="form-check form-check-inline form__lisOfServices">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 id="inlineCheckbox5"
-                value="option5"
+                name="services"
+                value="service5"
               />
-              <label class="form-check-label" htmlFor="inlineCheckbox5">
+              <label className="form-check-label" htmlFor="inlineCheckbox5">
                 Půjčovna kompenzačních pomůcek
               </label>
             </div>
           </div>
           <div className="services__form--btn-display">
-            <button class="btn services__form--btn" type="submit">
+            <button className="btn services__form--btn" type="submit">
               Najít službu
             </button>
           </div>

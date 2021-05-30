@@ -3,18 +3,23 @@ import Layout, { siteTitle } from '../components/layout';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getSortedOrganizationsData } from '../lib/organizations';
-import { useState } from 'react';
+import { useRouter } from 'next/router';
 
-export default function Page({ allOrganizationsData: allOrganizationsData }) {
-  const [typeOfFilter, setTypeOfFilter] = useState('');
+export default function Page({ allOrganizationsData: allOrganizationsData, allOrganizationsPagesCount: allOrganizationsPagesCount }) {
+  const router = useRouter();
 
-  if (typeOfFilter === 'organization-name') {
-    console.log('řazení dle názvu organizace');
-  } else if (typeOfFilter === 'town-name') {
-    console.log('řazení dle návvu mesta');
-  }
+  const sortChanged = async (event) => {
+    event.preventDefault();
+    let currentPage = router.query.page ?? 1;
+    router.push({
+      pathname: '/organizations',
+      query: {
+        page: currentPage,
+        sort: event.target.value,
+      },
+    })
+  };
 
-  console.log(typeOfFilter);
   return (
     <Layout page>
       <Head>
@@ -35,12 +40,13 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <label htmlFor="org">
               <select
                 id="org"
-                value={typeOfFilter}
-                onChange={(event) => setTypeOfFilter(event.target.value)}
+                name="sortBy"
+                value={(router.query.sort ?? "name")}
+                onChange={sortChanged}
               >
-                <option value="placeholder">Řažení podle:</option>
-                <option value="organization-name">názvu organizace</option>
-                <option value="town-name">názvu města</option>
+                <option disabled>Vyberte způsob řazení</option>
+                <option value="name">Řažení podle názvu organizace</option>
+                <option value="town">Řažení podle názvu města</option>
               </select>
             </label>
           </div>
@@ -79,21 +85,13 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
 
           <nav className="pages" aria-label="Page navigation example">
             <ul className="pagination justify-content-center">
-              <li className="page-item">
-                <a className="page-link" href="#">
-                  1
-                </a>
-              </li>
-              <li className="page-item">
-                <a className="page-link" href="#">
-                  2
-                </a>
-              </li>
-              <li className="page-item">
-                <a className="page-link" href="#">
-                  3
-                </a>
-              </li>
+              {Array.from(Array(allOrganizationsPagesCount).keys()).map(pageIndex => (
+                <li className={(router.query.page ?? 1) == (pageIndex + 1) ? 'page-item active' : 'page-item'} key={pageIndex}>
+                  <Link href={`/organizations?page=${pageIndex + 1}&sort=${router.query.sort}`}>
+                    <a className="page-link">{pageIndex + 1}</a>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
@@ -102,11 +100,16 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
   );
 }
 
-export async function getStaticProps() {
-  const allOrganizationsData = getSortedOrganizationsData();
+export async function getServerSideProps(context) {
+  let sortBy = context.query.sort
+  let page = context.query.page
+  let town = context.query.town
+  let services = context.query.services
+  const [allOrganizationsData, allOrganizationsPagesCount] = getSortedOrganizationsData(sortBy, page, town, services);
   return {
     props: {
       allOrganizationsData: allOrganizationsData,
+      allOrganizationsPagesCount: allOrganizationsPagesCount,
     },
   };
 }
