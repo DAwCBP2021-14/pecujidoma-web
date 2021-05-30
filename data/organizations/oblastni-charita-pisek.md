@@ -1,5 +1,5 @@
 ---
-name: 'Charita Písek'
+name: 'Oblastní charita Písek'
 logo: 'Charita.jpg'
 town: 'Písek'
 url: 'https://pisek.charita.cz/'

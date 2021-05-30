@@ -1,5 +1,5 @@
 ---
-name: 'Charita Sušice'
+name: 'Oblastní charita Sušice'
 logo: 'Charita.jpg'
 town: 'Sušice'
 url: 'https://www.susice.charita.cz/'

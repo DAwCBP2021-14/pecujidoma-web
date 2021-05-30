@@ -1,5 +1,5 @@
 ---
-name: 'Charita Strakonice'
+name: 'Oblastní charita Strakonice'
 logo: 'Charita.jpg'
 town: 'Strakonice'
 url: 'https://charita-strakonice.cz/'

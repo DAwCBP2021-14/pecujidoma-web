@@ -1,5 +1,5 @@
 ---
-name: 'Charita České Budějovice'
+name: 'Městská charita České Budějovice'
 logo: 'Charita.jpg'
 town: 'České Budějovice'
 url: 'https://mchcb.cz/'

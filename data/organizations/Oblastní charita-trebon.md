@@ -1,5 +1,5 @@
 ---
-name: 'Charita Třeboň'
+name: 'Oblastní charita Třeboň'
 logo: 'Charita.jpg'
 town: 'Třeboň'
 url: 'http://trebon.charita.cz'

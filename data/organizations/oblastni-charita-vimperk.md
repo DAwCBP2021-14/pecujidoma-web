@@ -1,5 +1,5 @@
 ---
-name: 'Charita Vimperk'
+name: 'Oblastní charita Vimperk'
 logo: 'Charita.jpg'
 town: 'Vimperk'
 url: 'https://vimperk.charita.cz/'
