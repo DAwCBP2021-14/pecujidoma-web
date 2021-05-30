@@ -46,7 +46,7 @@ export default function Page({
                   <p>Máte aktivní filtrování z přehledu služeb</p>{' '}
                   <Link href={`/organizations/`}>
                     <a className="btn btn-message">
-                      <span className="bold">Zrušit</span>
+                      <span className="bold">Zrušit filtrování</span>
                     </a>
                   </Link>
                 </div>
