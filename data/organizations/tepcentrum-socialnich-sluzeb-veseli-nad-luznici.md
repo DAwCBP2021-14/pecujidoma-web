@@ -12,4 +12,4 @@ service4: false
 service5: false
 ---
 
-Organizace
+Organizace **TEP, centrum sociálních služeb** poskytuje domácí péči, pečovatelskou službu a další ve Veselí nad Lužnicí.
