@@ -33,7 +33,7 @@ export default function Home({ allOrganizationsData: allOrganizationsData }) {
               blízkého? Vyhledávat můžete podle nejbližší obce s&nbsp;přenesenou
               působností.
             </p>
-            <Link href={`organizations`}>
+            <Link href={`/services/#form_services`}>
               <a className="btn btn-index bold">Kde pečujete?</a>
             </Link>
           </div>

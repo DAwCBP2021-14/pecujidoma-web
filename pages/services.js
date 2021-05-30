@@ -259,10 +259,16 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
           </Link>
         </div>
       </div>
+      <div className="index-intro services__form--display services__form_divide">
+        <h2 className="headings index-heading">
+          Vyhledejte vhodné služby dle místa péče:
+        </h2>
+      </div>
       <form
         method="GET"
         action="/organizations"
         className="services__form--display"
+        id="form_services"
       >
         <div>
           <label for="town-select">
