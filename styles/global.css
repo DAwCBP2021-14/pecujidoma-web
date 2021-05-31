@@ -493,6 +493,14 @@ sub {
   border: 1px solid black;
   transition: all 0.1s;
 }
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: rgb(252, 167, 40);
+  border: 1px solid black;
+}
+
 /******************* orgDetails.html *************** */
 .detail {
   max-width: 650px;
