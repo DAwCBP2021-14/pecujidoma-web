@@ -12,4 +12,4 @@ service4: false
 service5: true
 ---
 
-**Domácí hospic Strakonice** poskytuje domácí hospicovou péči ve Strakonicích a okolí (cca do 25 km). Pomáhá nevyléčitelně nemocným, kteří chtějí žít a dožít doma a byla jim ukončena léčba nebo doporučena palliativní léčba. Poskytuje specializovanou domácí zdravotní péči dostupnou 24 denně, o víkendu i svátcích, kompletní ošetřovatelskou péči, zapůjčení pomůcek usnadňujících péči, doprovázení, podporu a pomoc rodině v období pomoc v posledních záležitostech.
+**Domácí hospic sv. Markéty Strakonice** poskytuje domácí hospicovou péči ve Strakonicích a okolí (cca do 25 km). Pomáhá nevyléčitelně nemocným, kteří chtějí žít a dožít doma. Poskytuje specializovanou domácí zdravotní péči dostupnou 24 denně, o víkendu i svátcích, kompletní ošetřovatelskou péči, zapůjčení pomůcek usnadňujících péči, doprovázení, podporu a pomoc rodině v období pomoc v posledních záležitostech.

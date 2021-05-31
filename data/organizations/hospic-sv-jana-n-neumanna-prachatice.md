@@ -12,4 +12,4 @@ service4: false
 service5: true
 ---
 
-**Domácí hospic Prachatice** pomáhá pacientům v terminální fázi nevyléčitelných onemocnění především s tím, aby netrpěl nesnesitelnou bolestí, v posledních chvílích nezůstal osamocen a za každých okolností zůstala zachována jeho lidská důstojnost.
+**Domácí hospic sv. Jana Prachatice** pomáhá pacientům v terminální fázi nevyléčitelných onemocnění především s tím, aby netrpěl nesnesitelnou bolestí, v posledních chvílích nezůstal osamocen a za každých okolností zůstala zachována jeho lidská důstojnost.
