@@ -29,7 +29,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 aria-controls="flush-collapseOne"
               >
                 Příspěvek na péči
-                <span className="pruhledne">1111111111</span>
+                <span className="pruhledne">1111111111111</span>
                 <sub>
                   Podpora pro nemocné, kteří z potřebují pomoc při zvládání
                   základních životních potřeb.
@@ -89,7 +89,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 aria-controls="flush-collapseTwo"
               >
                 Dlouhodobé ošetřovné
-                <span className="pruhledne">11111</span>
+                <span className="pruhledne">11111111</span>
                 <sub>
                   Dlouhodobé ošetřovné umožňuje pečující osobě čerpat až 90
                   kalendářních dní pracovního volna.
@@ -158,7 +158,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 aria-controls="flush-collapseThree"
               >
                 Příspěvek na zvláštní pomůcku
-                <span className="pruhledne">111111</span>
+                <span className="pruhledne">11</span>
                 <sub>
                   Zvláštní pomůckou může být speciální počítač, schodolez,
                   schodová plošina nebo auto.
@@ -223,7 +223,8 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 aria-expanded="false"
                 aria-controls="flush-collapse3"
               >
-                Invalidní důchod<span className="pruhledne">11111</span>
+                Invalidní důchod
+                <span className="pruhledne">1111111111111</span>
                 <sub>
                   O invalidní důchod si mohou zažádat pacienti, kteří mají
                   sníženou pracovní schopnost{' '}
@@ -283,7 +284,8 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 aria-expanded="false"
                 aria-controls="flush-collapse4"
               >
-                Příspěvek na mobilitu<span className="pruhledne">11111</span>
+                Příspěvek na mobilitu
+                <span className="pruhledne">111111111</span>
                 <sub>
                   Příspěvek na mobilitu mohou využít držitelé průkazů ZTP a ZTTP
                   kteří se dopravují například k lékaři.
@@ -336,7 +338,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 aria-expanded="false"
                 aria-controls="flush-collapse4"
               >
-                Další druhy podpory<span className="pruhledne">11111</span>
+                Další druhy podpory<span className="pruhledne">1111111111</span>
                 <sub>
                   Úprava pracovní doby, podpora v nezaměstnanosti, náhradní doba
                   pojištění

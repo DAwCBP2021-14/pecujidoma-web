@@ -559,7 +559,7 @@ sub {
 }
 
 .false {
-  color: rgb(165, 164, 164);
+  color: rgba(190, 188, 188, 0.596);
 }
 
 .btn-details {
@@ -605,7 +605,10 @@ sub {
 .orgDetails__icons {
   max-width: 40px;
 }
-
+.detail__description-services li {
+  display: flex;
+  align-items: center;
+}
 /* **************** aboutUs.HTML ******************* */
 .aboutUs-container {
   max-width: 850px;
