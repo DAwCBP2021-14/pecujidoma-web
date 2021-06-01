@@ -352,11 +352,16 @@ sub {
 
 .services__form--display {
   display: flex;
-  justify-content: right;
-  flex-direction: column;
   margin-top: 55px;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+.services__form--column {
+  display: flex;
+  flex-direction: column;
+}
+.services__form--column h4 {
+  padding-left: 5vw;
 }
 
 .services__form_divide {
@@ -364,6 +369,7 @@ sub {
 }
 .services__form--btn {
   display: flex;
+  align-self: flex-end;
   margin: 15px;
 }
 
