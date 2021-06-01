@@ -295,6 +295,12 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </option>
             <option
               className="listOfServices__dropdown--content"
+              value="cesske-velenice"
+            >
+              České Velenice
+            </option>
+            <option
+              className="listOfServices__dropdown--content"
               value="cesky-krumlov"
             >
               Český Krumlov
@@ -313,6 +319,12 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </option>
             <option
               className="listOfServices__dropdown--content"
+              value="jindrichuv-hradec"
+            >
+              Jindřichův Hradec
+            </option>
+            <option
+              className="listOfServices__dropdown--content"
               value="kaplice"
             >
               Kaplice
@@ -322,9 +334,21 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </option>
             <option
               className="listOfServices__dropdown--content"
+              value="prachatice"
+            >
+              Prachatice
+            </option>
+            <option
+              className="listOfServices__dropdown--content"
               value="strakonice"
             >
               Strakonice
+            </option>
+            <option
+              className="listOfServices__dropdown--content"
+              value="sušice"
+            >
+              Sušice
             </option>
             <option className="listOfServices__dropdown--content" value="tabor">
               Tábor
