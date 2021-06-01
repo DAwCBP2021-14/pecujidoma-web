@@ -273,16 +273,15 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
       >
         <div className="services__form--column">
           <div>
-            <label for="town-select">
-              <h4>Vyberte město, kde chcete pečovat:</h4>
-            </label>
             <select
               id="town-select"
               name="town"
               className="form-select form__lisOfServices"
               aria-label="Default select example"
             >
-              <option disabled>Vyberte město, kde chcete pečovat</option>
+              <option value="" disabled selected hidden>
+                Vyberte město, kde chcete pečovat
+              </option>
               <option
                 className="listOfServices__dropdown--content"
                 value="borovany"

@@ -266,21 +266,7 @@ sub {
   visibility: hidden;
   color: transparent;
 }
-.accordion-button:hover {
-  z-index: 3;
-  border-color: #eda438 !important;
-  outline: 0;
-}
-.accordion-button:focus {
-  z-index: 3;
-  border-color: #eda438 !important;
-  outline: 0;
-}
-.accordion-button:active {
-  z-index: 3;
-  border-color: #eda438 !important;
-  outline: 0;
-}
+
 .accordion-button:not(.collapsed) {
   color: black;
   border-color: #eda438 !important;
@@ -365,7 +351,7 @@ sub {
 }
 
 .services__form_divide {
-  background-color: #eda438;
+  background: linear-gradient(#eda438, rgb(252, 187, 89));
 }
 .services__form--btn {
   display: flex;
@@ -596,17 +582,13 @@ sub {
   visibility: hidden;
   color: transparent;
 }
-.accordion-button:active {
-  z-index: 3;
+
+.accordion-button.collapsed:focus,
+.accordion-button.collapsed:active,
+.accordion-button.collapsed:hover {
   border-color: #eda438 !important;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
-}
-.accordion-button:focus {
-  z-index: 3;
-  border-color: #eda438 !important;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+  box-shadow: botom-14px -15px 0px -8px rgb(252, 167, 40);
+  background-color: rgb(252, 208, 142);
 }
 
 .accordion-button:not(.collapsed) {
