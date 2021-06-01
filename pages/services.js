@@ -44,28 +44,33 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               aria-labelledby="flush-headingOne"
               data-bs-parent="#accordionFlushExample"
             >
-              <Image
-                src={`/img/Ikony/Ikona_pece.png`}
-                alt={`terenni_odlehcovaci_sluzby`}
-                width={250}
-                height={250}
-                objectFit="contain"
-                className="listOfServices_img"
-              />
-              <div className="accordion-body">
-                Pomocná ruka pro všechny pečující, kteří si potřebují vyřídit
-                nejnutnější záležitosti, odpočinout si od každodenní péče nebo
-                se věnovat svým koníčkům. Domů přijede pečovatelka, případně
-                zdravotní sestra a postará se o vše potřebné. Vašim blízkým bude
-                poskytnuta profesionální péče a vy získáte trochu volného času.
+              <div className="services__accordion--display">
+                <Image
+                  src={`/img/Ikony/Ikona_pece.png`}
+                  alt={`terenni_odlehcovaci_sluzby`}
+                  width={150}
+                  height={150}
+                  objectFit="contain"
+                  className="listOfServices_img"
+                />
+                <div className="accordion-body">
+                  Pomocná ruka pro všechny pečující, kteří si potřebují vyřídit
+                  nejnutnější záležitosti, odpočinout si od každodenní péče nebo
+                  se věnovat svým koníčkům. Domů přijede pečovatelka, případně
+                  zdravotní sestra a postará se o vše potřebné. Vašim blízkým
+                  bude poskytnuta profesionální péče a vy získáte trochu volného
+                  času.
+                </div>
               </div>
-              <Link href={`/organizations?services=service1`}>
-                <a className="btn btn-list_of_services">
-                  <span className="bold">
-                    Organizace poskytující terénní odlehčovací služby
-                  </span>
-                </a>
-              </Link>
+              <div className="services__accordion--button">
+                <Link href={`/organizations?services=service1`}>
+                  <a className="btn btn-list_of_services">
+                    <span className="bold">
+                      Organizace poskytující terénní odlehčovací služby
+                    </span>
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -94,29 +99,32 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
           aria-labelledby="flush-headingTwo"
           data-bs-parent="#flush-headingTwo"
         >
-          <Image
-            src={`/img/Ikony/Ikona_hospic.png`}
-            alt={`paliativní péče`}
-            width={250}
-            height={250}
-            objectFit="contain"
-            className="listOfServices_img"
-          />
-          <div className="accordion-body">
-            Péče o nevyléčitelně nemocné pacienty v domácích podmínkách. Domácí
-            hospicová péče nabízí pomoc zdravotních sester i pečovatelek 24
-            hodin denně 7 dní v týdnu. Pečující mohou využít pomoc při dávkování
-            léků, zdravotní péči, s hygienou nemocného nebo psychologickou a
-            sociální podporu.
+          <div className="services__accordion--display">
+            <Image
+              src={`/img/Ikony/Ikona_hospic.png`}
+              alt={`paliativní péče`}
+              width={150}
+              height={150}
+              objectFit="contain"
+              className="listOfServices_img"
+            />
+            <div className="accordion-body">
+              Péče o nevyléčitelně nemocné pacienty v domácích podmínkách.
+              Domácí hospicová péče nabízí pomoc zdravotních sester i
+              pečovatelek 24 hodin denně 7 dní v týdnu. Pečující mohou využít
+              pomoc při dávkování léků, zdravotní péči, s hygienou nemocného
+              nebo psychologickou a sociální podporu.
+            </div>
           </div>
-
-          <Link href={`/organizations?services=service2`}>
-            <a className="btn btn-list_of_services">
-              <span className="bold">
-                Organizace poskytující paliativní péči
-              </span>
-            </a>
-          </Link>
+          <div className="services__accordion--button">
+            <Link href={`/organizations?services=service2`}>
+              <a className="btn btn-list_of_services">
+                <span className="bold">
+                  Organizace poskytující paliativní péči
+                </span>
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -143,28 +151,32 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
           aria-labelledby="flush-headingThree"
           data-bs-parent="#flush-headingThree"
         >
-          <Image
-            src={`/img/Ikony/Ikona_osobni_asistence.png`}
-            alt={`osobní asistence`}
-            width={250}
-            height={250}
-            objectFit="contain"
-            className="listOfServices_img"
-          />
-          <div className="accordion-body">
-            Pomoc a podpora pro pacienty při chodu domácnosti, hygieně, se
-            sociálními kontakty a dalšími potřebami. Osobní asistence je placená
-            sociální služba pomáhající osobám, které z důvodu zdravotního
-            postižení, věku nebo nemoci potřebují pomoc v běžných činnostech
-            života.
+          <div className="services__accordion--display">
+            <Image
+              src={`/img/Ikony/Ikona_osobni_asistence.png`}
+              alt={`osobní asistence`}
+              width={150}
+              height={150}
+              objectFit="contain"
+              className="listOfServices_img"
+            />
+            <div className="accordion-body">
+              Pomoc a podpora pro pacienty při chodu domácnosti, hygieně, se
+              sociálními kontakty a dalšími potřebami. Osobní asistence je
+              placená sociální služba pomáhající osobám, které z důvodu
+              zdravotního postižení, věku nebo nemoci potřebují pomoc v běžných
+              činnostech života.
+            </div>
           </div>
-          <Link href={`/organizations?services=service3`}>
-            <a className="btn btn-list_of_services">
-              <span className="bold">
-                Organizace poskytující osobní asistenci
-              </span>
-            </a>
-          </Link>
+          <div className="services__accordion--button">
+            <Link href={`/organizations?services=service3`}>
+              <a className="btn btn-list_of_services">
+                <span className="bold">
+                  Organizace poskytující osobní asistenci
+                </span>
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -191,27 +203,31 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
           aria-labelledby="flush-heading3"
           data-bs-parent="#accordionFlushExample"
         >
-          <Image
-            src={`/img/Ikony/Ikona_psycholog.png`}
-            alt={`psychologická péče`}
-            width={250}
-            height={250}
-            objectFit="contain"
-            className="listOfServices_img"
-          />
-          <div className="accordion-body">
-            Psychologická pomoc pro pacienty i jejich rodiny, zejména o pečující
-            členy domácnosti, je velmi potřebná. Psycholog vyslechne, poradí a
-            pomůže v těžké situaci. Nebojte se obrátit na odborníky, kteří vám
-            mohou v náročném životním období ulehčit.
+          <div className="services__accordion--display">
+            <Image
+              src={`/img/Ikony/Ikona_psycholog.png`}
+              alt={`psychologická péče`}
+              width={150}
+              height={150}
+              objectFit="contain"
+              className="listOfServices_img"
+            />
+            <div className="accordion-body">
+              Psychologická pomoc pro pacienty i jejich rodiny, zejména o
+              pečující členy domácnosti, je velmi potřebná. Psycholog vyslechne,
+              poradí a pomůže v těžké situaci. Nebojte se obrátit na odborníky,
+              kteří vám mohou v náročném životním období ulehčit.
+            </div>
           </div>
-          <Link href={`/organizations?services=service4`}>
-            <a className="btn btn-list_of_services">
-              <span className="bold">
-                Organizace poskytující psychologickou péči
-              </span>
-            </a>
-          </Link>
+          <div className="services__accordion--button">
+            <Link href={`/organizations?services=service4`}>
+              <a className="btn btn-list_of_services">
+                <span className="bold">
+                  Organizace poskytující psychologickou péči
+                </span>
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -238,26 +254,30 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
           aria-labelledby="flush-heading4"
           data-bs-parent="#flush-heading4"
         >
-          <Image
-            src={`/img/Ikony/Ikona_pujcovna.png`}
-            alt={`půjčovna kompenzačních pomůcek`}
-            width={350}
-            height={350}
-            objectFit="contain"
-            className="listOfServices_img"
-          />
-          <div className="accordion-body">
-            Velká pomoc pro pečující rodiny i jejich pacienty jsou různé
-            kompenzační pomůcky, které pomohou ulehčit péči i každodenní běžné
-            fungování rodiny. Půjčovny kompenzačních pomůcek nabízejí mnoho
-            možností od polohovacích postelí, vozíků, chodítek, až po
-            oxygenátory či lienární dávkovače léků.
+          <div className="services__accordion--display">
+            <Image
+              src={`/img/Ikony/Ikona_pujcovna.png`}
+              alt={`půjčovna kompenzačních pomůcek`}
+              width={150}
+              height={150}
+              objectFit="contain"
+              className="listOfServices_img"
+            />
+            <div className="accordion-body">
+              Velká pomoc pro pečující rodiny i jejich pacienty jsou různé
+              kompenzační pomůcky, které pomohou ulehčit péči i každodenní běžné
+              fungování rodiny. Půjčovny kompenzačních pomůcek nabízejí mnoho
+              možností od polohovacích postelí, vozíků, chodítek, až po
+              oxygenátory či lienární dávkovače léků.
+            </div>
           </div>
-          <Link href={`/organizations?services=service5`}>
-            <a className="btn btn-list_of_services">
-              <span className="bold">Půjčovny kompenzačních pomůcek</span>
-            </a>
-          </Link>
+          <div className="services__accordion--button">
+            <Link href={`/organizations?services=service5`}>
+              <a className="btn btn-list_of_services">
+                <span className="bold">Půjčovny kompenzačních pomůcek</span>
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="index-intro services__form--display services__form_divide">
@@ -392,7 +412,9 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               </option>
             </select>
           </div>
-          <h4>Vyberte služby, o které máte zájem:</h4>
+          <h5 className="heading__services--form">
+            Vyberte služby, o které máte zájem:
+          </h5>
           <div>
             <div className="form-check form-check-inline form__lisOfServices">
               <input

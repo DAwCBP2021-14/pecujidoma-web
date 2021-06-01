@@ -281,12 +281,13 @@ sub {
 
 .accordion-body {
   text-align: justify;
+  display: flex;
 }
 
-.listOfServices_img {
+img.listOfServices_img {
   max-width: 15vw;
   margin: 15px;
-  float: left;
+  display: flex;
 }
 
 .listOfServices__background--img {
@@ -298,10 +299,6 @@ sub {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.text_flex {
-  display: flex;
 }
 
 .btn-list_of_services {
@@ -316,6 +313,11 @@ sub {
   max-width: 40vw;
   margin: 1.5rem auto;
 }
+
+.heading__services--form {
+  margin: 1.5rem auto;
+}
+
 .form-check input:active {
   border: #eda438 !important;
 }
@@ -362,6 +364,20 @@ sub {
 .services__form--btn:hover {
   background-color: rgb(252, 167, 40);
   color: white;
+}
+
+.text_flex {
+  display: flex;
+  flex-direction: column;
+}
+.services__accordion--display {
+  display: flex;
+  flex-direction: row;
+}
+.services__accordion--button {
+  display: flex;
+  max-width: 55vw;
+  margin: auto;
 }
 
 /******************* LISTOFORG.HTML************* */
