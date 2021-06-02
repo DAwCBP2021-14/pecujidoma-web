@@ -8,7 +8,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
         <title>Finanční pomoc</title>
       </Head>
       <div className="index-container">
-        <div className="index-intro listOfServices__background--img">
+        <div className="index-intro finHelp__background--img">
           <h2 className="headings index-heading">Finanční pomoc</h2>
           <p className="intro__text bold">
             Když se rozhodnete pečovat doma, je nezbytné zajistit finanční
@@ -29,10 +29,10 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 aria-controls="flush-collapseOne"
               >
                 Příspěvek na péči
-                <span className="pruhledne">1111111111111</span>
+                <span className="pruhledne">11</span>
                 <sub>
-                  Podpora pro nemocné, kteří z potřebují pomoc při zvládání
-                  základních životních potřeb.
+                  Podpora pro ty, kdo potřebují pomoc při zvládání základních
+                  životních potřeb.
                 </sub>
               </button>
             </h2>
@@ -89,7 +89,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 aria-controls="flush-collapseTwo"
               >
                 Dlouhodobé ošetřovné
-                <span className="pruhledne">11111111</span>
+                <span className="pruhledne">11</span>
                 <sub>
                   Dlouhodobé ošetřovné umožňuje pečující osobě čerpat až 90
                   kalendářních dní pracovního volna.
@@ -223,8 +223,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 aria-expanded="false"
                 aria-controls="flush-collapse3"
               >
-                Invalidní důchod
-                <span className="pruhledne">1111111111111</span>
+                Invalidní důchod<span className="pruhledne">11</span>
                 <sub>
                   O invalidní důchod si mohou zažádat pacienti, kteří mají
                   sníženou pracovní schopnost{' '}
@@ -284,8 +283,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 aria-expanded="false"
                 aria-controls="flush-collapse4"
               >
-                Příspěvek na mobilitu
-                <span className="pruhledne">111111111</span>
+                Příspěvek na mobilitu<span className="pruhledne">11</span>
                 <sub>
                   Příspěvek na mobilitu mohou využít držitelé průkazů ZTP a ZTTP
                   kteří se dopravují například k lékaři.
@@ -338,7 +336,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                 aria-expanded="false"
                 aria-controls="flush-collapse4"
               >
-                Další druhy podpory<span className="pruhledne">1111111111</span>
+                Další druhy podpory<span className="pruhledne">11</span>
                 <sub>
                   Úprava pracovní doby, podpora v nezaměstnanosti, náhradní doba
                   pojištění
