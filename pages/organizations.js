@@ -40,7 +40,7 @@ export default function Page({
         </p>
         <div className="card-container">
           <div className="org-sorted">
-            {router.query.town ? (
+            {router.query.town || router.query.services ? (
               <>
                 <div className="message">
                   <p>Máte aktivní filtrování z přehledu služeb</p>{' '}
@@ -145,7 +145,7 @@ export default function Page({
               </Link>
             </div>
           ))} */}
-          {router.query.town ? (
+          {router.query.town || router.query.services ? (
             <></>
           ) : (
             <nav className="pages" aria-label="Page navigation example">
