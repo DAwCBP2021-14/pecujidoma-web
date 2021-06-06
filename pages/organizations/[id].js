@@ -59,7 +59,7 @@ export default function Organization({ organizationData: organizationData }) {
               className={organizationData.service1 === true ? 'true' : 'false'}
             >
               <Image
-                src={`/img/ikony/ikona_pece.png`}
+                src={`/img/Ikony/ikona_pece.png`}
                 alt="Ikona Terenní odlehčovací služba"
                 width={60}
                 height={40}
@@ -73,7 +73,7 @@ export default function Organization({ organizationData: organizationData }) {
               className={organizationData.service2 === true ? 'true' : 'false'}
             >
               <Image
-                src={`/img/ikony/ikona_hospic.png`}
+                src={`/img/Ikony/ikona_hospic.png`}
                 alt="Ikona hospic"
                 width={60}
                 height={40}
@@ -86,7 +86,7 @@ export default function Organization({ organizationData: organizationData }) {
               className={organizationData.service3 === true ? 'true' : 'false'}
             >
               <Image
-                src={`/img/ikony/ikona_osobni_asistence.png`}
+                src={`/img/Ikony/ikona_osobni_asistence.png`}
                 alt="Ikona osobní asistence"
                 width={60}
                 height={40}
@@ -99,7 +99,7 @@ export default function Organization({ organizationData: organizationData }) {
               className={organizationData.service4 === true ? 'true' : 'false'}
             >
               <Image
-                src={`/img/ikony/ikona_psycholog.png`}
+                src={`/img/Ikony/ikona_psycholog.png`}
                 alt="Ikona psychologiská péče"
                 width={60}
                 height={40}
@@ -112,7 +112,7 @@ export default function Organization({ organizationData: organizationData }) {
               className={organizationData.service5 === true ? 'true' : 'false'}
             >
               <Image
-                src={`/img/ikony/ikona_pujcovna.png`}
+                src={`/img/Ikony/ikona_pujcovna.png`}
                 alt="Ikona půjčovna"
                 width={60}
                 height={40}

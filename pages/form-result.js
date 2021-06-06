@@ -25,14 +25,14 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <li
               className={
                 router.query.zdravotni === 'true' ||
-                router.query.pecovatelska === 'true' ||
-                router.query.terenni === 'true'
+                  router.query.pecovatelska === 'true' ||
+                  router.query.terenni === 'true'
                   ? 'true'
                   : 'false'
               }
             >
               <Image
-                src={`/img/ikony/ikona_pece.png`}
+                src={`/img/Ikony/ikona_pece.png`}
                 alt="Ikona Terenní odlehčovací služba"
                 width={60}
                 height={40}
@@ -44,13 +44,13 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             <li
               className={
                 router.query.palliativni === 'true' ||
-                router.query.hospic === 'true'
+                  router.query.hospic === 'true'
                   ? 'true'
                   : 'false'
               }
             >
               <Image
-                src={`/img/ikony/ikona_hospic.png`}
+                src={`/img/Ikony/ikona_hospic.png`}
                 alt="Ikona hospic"
                 width={60}
                 height={40}
@@ -63,7 +63,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
               className={router.query.asistence === 'true' ? 'true' : 'false'}
             >
               <Image
-                src={`/img/ikony/ikona_osobni_asistence.png`}
+                src={`/img/Ikony/ikona_osobni_asistence.png`}
                 alt="Ikona osobní asistence"
                 width={60}
                 height={40}
@@ -74,7 +74,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </li>
             <li className={router.query.psycho === 'true' ? 'true' : 'false'}>
               <Image
-                src={`/img/ikony/ikona_psycholog.png`}
+                src={`/img/Ikony/ikona_psycholog.png`}
                 alt="Ikona psychologiská péče"
                 width={60}
                 height={40}
@@ -85,7 +85,7 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </li>
             <li className={router.query.pomucky === 'true' ? 'true' : 'false'}>
               <Image
-                src={`/img/ikony/ikona_pujcovna.png`}
+                src={`/img/Ikony/ikona_pujcovna.png`}
                 alt="Ikona půjčovna"
                 width={60}
                 height={40}
