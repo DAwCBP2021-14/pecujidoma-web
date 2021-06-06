@@ -38,11 +38,11 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </h2>
             <div
               id="flush-collapseOne"
-              className="accordion-collapse collapse"
+              className="accordion-collapse collapse accordion__flex--column"
               aria-labelledby="flush-headingOne"
               data-bs-parent="#accordionFlushExample"
             >
-              <div className="accordion-body">
+              <div className="accordion-body accordion__flex--column">
                 <p>
                   {' '}
                   Příspěvek na péči je určen osobám, které kvůli nemoci, úrazu
@@ -98,11 +98,11 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </h2>
             <div
               id="flush-collapseTwo"
-              className="accordion-collapse collapse"
+              className="accordion-collapse collapse accordion__flex--colum"
               aria-labelledby="flush-headingTwo"
               data-bs-parent="#flush-headingTwo"
             >
-              <div className="accordion-body">
+              <div className="accordion-body  accordion__flex--column">
                 <p>
                   {' '}
                   Dlouhodobé ošetřovné umožňuje čerpání až 90 kalendářních dní
@@ -167,11 +167,11 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </h2>
             <div
               id="flush-collapseThree"
-              className="accordion-collapse collapse"
+              className="accordion-collapse collapse accordion__flex--colum"
               aria-labelledby="flush-headingThree"
               data-bs-parent="#flush-headingThree"
             >
-              <div className="accordion-body">
+              <div className="accordion-body  accordion__flex--column">
                 <p>
                   Jedná se o pomůcky, které těmto lidem umožní sebeobsluhu, nebo
                   které tito lidé potřebují kvůli práci, studiu, získávání
@@ -232,11 +232,11 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </h2>
             <div
               id="flush-collapse3"
-              className="accordion-collapse collapse"
+              className="accordion-collapse collapse accordion__flex--colum"
               aria-labelledby="flush-heading3"
               data-bs-parent="#accordionFlushExample"
             >
-              <div className="accordion-body">
+              <div className="accordion-body  accordion__flex--column">
                 <p>
                   U dlouhodobě nemocných je často nutné řešit jiné formy
                   příspěvku než je nemocenská - ta se vyplácí pouze jeden rok.
@@ -292,11 +292,11 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </h2>
             <div
               id="flush-collapse4"
-              className="accordion-collapse collapse"
+              className="accordion-collapse collapse accordion__flex--colum"
               aria-labelledby="flush-heading4"
               data-bs-parent="#flush-heading4"
             >
-              <div className="accordion-body">
+              <div className="accordion-body  accordion__flex--column">
                 <p>
                   Příspěvek na mobilitu je definován jako opakující se nároková
                   dávka, na kterou mají nárok osoby starší jednoho roku, které
@@ -345,11 +345,11 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
             </h2>
             <div
               id="flush-collapse6"
-              className="accordion-collapse collapse"
+              className="accordion-collapse collapse accordion__flex--colum"
               aria-labelledby="flush-heading6"
               data-bs-parent="#flush-heading6"
             >
-              <div className="accordion-body">
+              <div className="accordion-body  accordion__flex--column">
                 <p>Nárok na podporu v nezaměstnanosti</p>
                 <p>
                   Doba péče se hodnotí jako zaměstnání a započítává se do doby

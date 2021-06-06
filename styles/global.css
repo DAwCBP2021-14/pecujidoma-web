@@ -307,6 +307,8 @@ img.listOfServices_img {
 
 .btn-list_of_services {
   margin: 25px;
+  flex-grow: 0;
+  max-width: 48vw;
 }
 
 .btn-list_of_services:hover {
@@ -630,6 +632,16 @@ sub {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+p.accordion__flex--column {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion__flex--column {
+  display: flex;
+  flex-direction: column;
 }
 
 /* **************** aboutUs.HTML ******************* */
