@@ -66,15 +66,17 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                   žadatele o příspěvek.{' '}
                 </p>
               </div>
-              <a
-                href="https://pece.cz/prispevek-peci"
-                target="_blank"
-                className="btn btn-list_of_services"
-              >
-                <span className="bold">
-                  Bližší informace o příspěvku na péči
-                </span>
-              </a>
+              <div className="services__accordion--button">
+                <a
+                  href="https://pece.cz/prispevek-peci"
+                  target="_blank"
+                  className="btn btn-list_of_services"
+                >
+                  <span className="bold">
+                    Bližší informace o příspěvku na péči
+                  </span>
+                </a>
+              </div>
             </div>
             <div className="accordion-item">
               <h2 className="accordion-header" id="flush-headingTwo">
@@ -133,15 +135,17 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                     sociálního zabezpečení.{' '}
                   </p>
                 </div>
-                <a
-                  href="https://www.cssz.cz/web/cz/podrobne-informace-o-dlouhodobem-osetrovnem"
-                  target="_blank"
-                  className="btn btn-list_of_services"
-                >
-                  <span className="bold">
-                    Bližší informace o dlouhodobém ošetřovném
-                  </span>
-                </a>
+                <div className="services__accordion--button">
+                  <a
+                    href="https://www.cssz.cz/web/cz/podrobne-informace-o-dlouhodobem-osetrovnem"
+                    target="_blank"
+                    className="btn btn-list_of_services"
+                  >
+                    <span className="bold">
+                      Bližší informace o dlouhodobém ošetřovném
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -199,15 +203,17 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                     pořízení schodišťové plošiny.{' '}
                   </p>
                 </div>
-                <a
-                  href="https://www.mpsv.cz/-/zadost-o-prispevek-na-zvlastni-pomucku"
-                  target="_blank"
-                  className="btn btn-list_of_services"
-                >
-                  <span className="bold">
-                    Bližší informace o příspěvku na zvláštní pomůcku
-                  </span>
-                </a>
+                <div className="services__accordion--button">
+                  <a
+                    href="https://www.mpsv.cz/-/zadost-o-prispevek-na-zvlastni-pomucku"
+                    target="_blank"
+                    className="btn btn-list_of_services"
+                  >
+                    <span className="bold">
+                      Bližší informace o příspěvku na zvláštní pomůcku
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -259,15 +265,17 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                     zasílání záloh po dobu posouzení žádosti.
                   </p>
                 </div>
-                <a
-                  href="https://www.cssz.cz/invalidni-duchod"
-                  target="_blank"
-                  className="btn btn-list_of_services"
-                >
-                  <span className="bold">
-                    Bližší informace o invalidním důchodu
-                  </span>
-                </a>
+                <div className="services__accordion--button">
+                  <a
+                    href="https://www.cssz.cz/invalidni-duchod"
+                    target="_blank"
+                    className="btn btn-list_of_services"
+                  >
+                    <span className="bold">
+                      Bližší informace o invalidním důchodu
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -312,15 +320,17 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                     kalendářní měsíce, za které náležel.
                   </p>
                 </div>
-                <a
-                  href="https://www.mpsv.cz/-/prispevek-na-mobilitu"
-                  target="_blank"
-                  className="btn btn-list_of_services"
-                >
-                  <span className="bold">
-                    Bližší informace o příspěvku na mobilitu
-                  </span>
-                </a>
+                <div className="services__accordion--button">
+                  <a
+                    href="https://www.mpsv.cz/-/prispevek-na-mobilitu"
+                    target="_blank"
+                    className="btn btn-list_of_services"
+                  >
+                    <span className="bold">
+                      Bližší informace o příspěvku na mobilitu
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -380,15 +390,17 @@ export default function Page({ allOrganizationsData: allOrganizationsData }) {
                     III. nebo IV. stupni závislosti
                   </p>
                 </div>
-                <a
-                  href="https://socialnipolitika.eu/2021/01/na-co-maji-pecujici-osoby-narok/"
-                  target="_blank"
-                  className="btn btn-list_of_services"
-                >
-                  <span className="bold">
-                    Bližší informace o dalších podporách
-                  </span>
-                </a>
+                <div className="services__accordion--button">
+                  <a
+                    href="https://socialnipolitika.eu/2021/01/na-co-maji-pecujici-osoby-narok/"
+                    target="_blank"
+                    className="btn btn-list_of_services"
+                  >
+                    <span className="bold">
+                      Bližší informace o dalších podporách
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
